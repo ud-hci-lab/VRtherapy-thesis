@@ -1,8 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Valve.VR;
-using Valve.VR.InteractionSystem;
 public class resizeWithLeftController : MonoBehaviour
 {
     public GameObject task;
@@ -11,7 +9,7 @@ public class resizeWithLeftController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("displays connected: " + Display.displays.Length);
     }
 
     // Update is called once per frame
@@ -30,6 +28,5 @@ public class resizeWithLeftController : MonoBehaviour
                 task.transform.position = new Vector3(otherController.transform.position.x, otherController.transform.position.y + 0.75f, otherController.transform.position.z);
                 task.transform.rotation = otherController.transform.rotation; 
             }
-        
     }
-}
+} 
