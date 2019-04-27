@@ -276,6 +276,7 @@
             </e>
           </e>
         </e>
+        <e p="ResetDots.cs" t="Include" />
         <e p="resizeWithLeftController.cs" t="Include" />
         <e p="showAtSpeed.cs" t="Include" />
         <e p="showVFXonEnter.cs" t="Include" />

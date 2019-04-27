@@ -5,27 +5,24 @@ using UnityEngine;
 public class showAtSpeed : MonoBehaviour
 {
     public GameObject controllerPos;
-    public float speedLimit = 0.005f;
+    public float speedLimit = 0.008f;
     private Vector3 priorPos;
 
     private Renderer _renderer;
     // Update is called once per frame
+
+    void Start()
+    {
+        _renderer = this.GetComponent<Renderer>();
+    }
     void Update()
     {
         Vector3 currentPos = controllerPos.transform.position;
         float speed = Vector3.Distance(currentPos, priorPos);
-        _renderer = this.GetComponent<Renderer>();
+        Debug.Log("At " + Time.time*1000f +". Hand Position:" + controllerPos.transform.position.ToString("F4"));
+        
         priorPos = currentPos;
 
-        if (Math.Abs(speed) > speedLimit)
-        {
-            _renderer.enabled = true    ;
-//            transform.position = new Vector3(0.75f, 2f, -2.77f);
-        }
-        else
-        {
-            _renderer.enabled = false    ;
-//            transform.position = new Vector3(0f,-100f,0f);
-        }
+        _renderer.enabled = Math.Abs(speed) > speedLimit;
     }
 }

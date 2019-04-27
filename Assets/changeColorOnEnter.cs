@@ -16,14 +16,11 @@ public class changeColorOnEnter : MonoBehaviour
         hasBeenGreened = false;
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            m_Material.color = pre;
-            hasBeenGreened = false;
 
-        }
+    public void ResetToGreen()
+    {
+        m_Material.color = pre;
+        hasBeenGreened = false;
     }
 
     // Update is called once per frame
@@ -34,6 +31,7 @@ public class changeColorOnEnter : MonoBehaviour
         if (hasBeenGreened == false)
         {
             hasBeenGreened = true;
+            Debug.Log("Success hit at" + Time.time*1000f +". Hand Position:" + other.transform.position.ToString("F4"));
             AudioSource audd = GetComponent<AudioSource>();
             audd.Play();
         }
