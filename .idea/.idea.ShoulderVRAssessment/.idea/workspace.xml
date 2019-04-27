@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="374efd9b-3d38-46b9-abcc-37205dac88f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoulderVRAssessment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoulderVRAssessment/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Poly/Assets/Paintbrush_Poly_by_Google_cEH5v5HWqt9.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Poly/Assets/Paintbrush_Poly_by_Google_cEH5v5HWqt9.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Poly/Resources/PolyAttributions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Poly/Resources/PolyAttributions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/resizeWithLeftController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resizeWithLeftController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/showAtSpeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/showAtSpeed.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/showAtSpeed.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+            <state relative-caret-position="336">
+              <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
               <folding>
                 <marker date="1556323967519" expanded="true" signature="6:92" ph="..." />
                 <marker date="1556323967519" expanded="true" signature="133:860" ph="{...}" />
@@ -77,18 +73,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/resizeWithLeftController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="176">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <marker date="1556323609870" expanded="true" signature="6:111" ph="..." />
-                <marker date="1556323609870" expanded="true" signature="189:755" ph="{...}" />
-                <marker date="1556323609870" expanded="true" signature="276:552" ph="{...}" />
-                <marker date="1556323609870" expanded="true" signature="324:416" ph="{...}" />
-                <marker date="1556323609870" expanded="true" signature="454:546" ph="{...}" />
-                <marker date="1556323609870" expanded="true" signature="597:753" ph="{...}" />
+                <marker date="1556324449926" expanded="true" signature="6:111" ph="..." />
+                <marker date="1556324449926" expanded="true" signature="189:781" ph="{...}" />
+                <marker date="1556324449926" expanded="true" signature="277:553" ph="{...}" />
+                <marker date="1556324449926" expanded="true" signature="325:417" ph="{...}" />
+                <marker date="1556324449926" expanded="true" signature="455:547" ph="{...}" />
+                <marker date="1556324449926" expanded="true" signature="598:779" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -162,8 +158,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/trackedObjects.cs" />
-        <option value="$PROJECT_DIR$/Assets/resizeWithLeftController.cs" />
         <option value="$PROJECT_DIR$/Assets/showAtSpeed.cs" />
+        <option value="$PROJECT_DIR$/Assets/resizeWithLeftController.cs" />
       </list>
     </option>
   </component>
@@ -233,12 +229,12 @@
       <option name="presentableId" value="Default" />
       <updated>1556307080754</updated>
       <workItem from="1556307081936" duration="14000" />
-      <workItem from="1556309380002" duration="6712000" />
+      <workItem from="1556309380002" duration="7193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6726000" />
+    <option name="totallyTimeSpent" value="7207000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -299,31 +295,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/VRTK/Dependencies/Zinnia.Unity/Runtime/Tracking/CameraRig/LinkedAliasAssociationCollection.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding>
-            <marker date="1556305094214" expanded="true" signature="35:2554" ph="{...}" />
-            <marker date="1556305094214" expanded="false" signature="48:232" ph="..." />
-            <marker date="1556305094214" expanded="true" signature="238:393" ph="/// Provides the basis for describing a CameraRig Alias Association by providing the linked elements of the Camer ... " />
-            <marker date="1556305094214" expanded="true" signature="459:2552" ph="{...}" />
-            <marker date="1556305094214" expanded="true" signature="474:741" ph="PlayArea Settings" />
-            <marker date="1556305094214" expanded="true" signature="508:581" ph="/// The associated PlayArea. ... " />
-            <marker date="1556305094214" expanded="true" signature="751:1444" ph="Headset Settings" />
-            <marker date="1556305094214" expanded="true" signature="784:856" ph="/// The associated Headset. ... " />
-            <marker date="1556305094214" expanded="true" signature="1004:1083" ph="/// The associated Headset Camera. ... " />
-            <marker date="1556305094214" expanded="true" signature="1205:1294" ph="/// The associated Headset Velocity Tracker. ... " />
-            <marker date="1556305094214" expanded="true" signature="1454:1992" ph="Left Controller Settings" />
-            <marker date="1556305094214" expanded="true" signature="1495:1575" ph="/// The associated Left Controller. ... " />
-            <marker date="1556305094214" expanded="true" signature="1738:1835" ph="/// The associated Left Controller Velocity Tracker. ... " />
-            <marker date="1556305094214" expanded="false" signature="2002:2546" ph="Right Controller Settings" />
-            <marker date="1556305094214" expanded="true" signature="2044:2125" ph="/// The associated Right Controller. ... " />
-            <marker date="1556305094214" expanded="true" signature="2290:2388" ph="/// The associated Right Controller Velocity Tracker. ... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/VRTK/Prefabs/CameraRig/UnityXRCameraRig/SharedResources/Scripts/Input/UnityButtonAction.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -394,31 +365,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/resizeWithLeftController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <marker date="1556323609870" expanded="true" signature="6:111" ph="..." />
-            <marker date="1556323609870" expanded="true" signature="189:755" ph="{...}" />
-            <marker date="1556323609870" expanded="true" signature="276:552" ph="{...}" />
-            <marker date="1556323609870" expanded="true" signature="324:416" ph="{...}" />
-            <marker date="1556323609870" expanded="true" signature="454:546" ph="{...}" />
-            <marker date="1556323609870" expanded="true" signature="597:753" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/showAtSpeed.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        <state relative-caret-position="336">
+          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
           <folding>
             <marker date="1556323967519" expanded="true" signature="6:92" ph="..." />
             <marker date="1556323967519" expanded="true" signature="133:860" ph="{...}" />
             <marker date="1556323967519" expanded="true" signature="330:858" ph="{...}" />
             <marker date="1556323967519" expanded="true" signature="586:715" ph="{...}" />
             <marker date="1556323967519" expanded="true" signature="728:852" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/VRTK/Dependencies/Zinnia.Unity/Runtime/Tracking/CameraRig/LinkedAliasAssociationCollection.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <marker date="1556305094214" expanded="true" signature="35:2554" ph="{...}" />
+            <marker date="1556305094214" expanded="false" signature="48:232" ph="..." />
+            <marker date="1556305094214" expanded="true" signature="238:393" ph="/// Provides the basis for describing a CameraRig Alias Association by providing the linked elements of the Camer ... " />
+            <marker date="1556305094214" expanded="true" signature="459:2552" ph="{...}" />
+            <marker date="1556305094214" expanded="true" signature="474:741" ph="PlayArea Settings" />
+            <marker date="1556305094214" expanded="true" signature="508:581" ph="/// The associated PlayArea. ... " />
+            <marker date="1556305094214" expanded="true" signature="751:1444" ph="Headset Settings" />
+            <marker date="1556305094214" expanded="true" signature="784:856" ph="/// The associated Headset. ... " />
+            <marker date="1556305094214" expanded="true" signature="1004:1083" ph="/// The associated Headset Camera. ... " />
+            <marker date="1556305094214" expanded="true" signature="1205:1294" ph="/// The associated Headset Velocity Tracker. ... " />
+            <marker date="1556305094214" expanded="true" signature="1454:1992" ph="Left Controller Settings" />
+            <marker date="1556305094214" expanded="true" signature="1495:1575" ph="/// The associated Left Controller. ... " />
+            <marker date="1556305094214" expanded="true" signature="1738:1835" ph="/// The associated Left Controller Velocity Tracker. ... " />
+            <marker date="1556305094214" expanded="false" signature="2002:2546" ph="Right Controller Settings" />
+            <marker date="1556305094214" expanded="true" signature="2044:2125" ph="/// The associated Right Controller. ... " />
+            <marker date="1556305094214" expanded="true" signature="2290:2388" ph="/// The associated Right Controller Velocity Tracker. ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/resizeWithLeftController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <marker date="1556324449926" expanded="true" signature="6:111" ph="..." />
+            <marker date="1556324449926" expanded="true" signature="189:781" ph="{...}" />
+            <marker date="1556324449926" expanded="true" signature="277:553" ph="{...}" />
+            <marker date="1556324449926" expanded="true" signature="325:417" ph="{...}" />
+            <marker date="1556324449926" expanded="true" signature="455:547" ph="{...}" />
+            <marker date="1556324449926" expanded="true" signature="598:779" ph="{...}" />
           </folding>
         </state>
       </provider>

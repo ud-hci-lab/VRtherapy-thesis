@@ -9,6 +9,7 @@ public class resizeWithLeftController : MonoBehaviour
 {
     public GameObject task;
     public GameObject otherController;
+
     void Update()
     {
 
@@ -23,7 +24,7 @@ public class resizeWithLeftController : MonoBehaviour
 
     public void LockTransformToController()
     {
-        Debug.Log("hi");
-        task.transform.SetPositionAndRotation(otherController.transform.position, otherController.transform.rotation);
+        
+        task.transform.SetPositionAndRotation(otherController.transform.position + otherController.transform.forward*0.2f, otherController.transform.rotation);
     }
 } 
