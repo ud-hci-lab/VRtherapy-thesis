@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="374efd9b-3d38-46b9-abcc-37205dac88f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Introduction To HTC Vive - Final/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Introduction To HTC Vive - Final/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Introduction To HTC Vive - Final/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Introduction To HTC Vive - Final/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoulderVRAssessment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoulderVRAssessment/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Poly/Assets/Paintbrush_Poly_by_Google_cEH5v5HWqt9.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Poly/Assets/Paintbrush_Poly_by_Google_cEH5v5HWqt9.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Poly/Resources/PolyAttributions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Poly/Resources/PolyAttributions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resizeWithLeftController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resizeWithLeftController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/showAtSpeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/showAtSpeed.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,12 +15,161 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/showAtSpeed.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+              <folding>
+                <marker date="1556323967519" expanded="true" signature="6:92" ph="..." />
+                <marker date="1556323967519" expanded="true" signature="133:860" ph="{...}" />
+                <marker date="1556323967519" expanded="true" signature="330:858" ph="{...}" />
+                <marker date="1556323967519" expanded="true" signature="586:715" ph="{...}" />
+                <marker date="1556323967519" expanded="true" signature="728:852" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/VRTK/Dependencies/Zinnia.Unity/Runtime/Tracking/CameraRig/LinkedAliasAssociationCollection.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <folding>
+                <marker date="1556305094214" expanded="true" signature="35:2554" ph="{...}" />
+                <marker date="1556305094214" expanded="false" signature="48:232" ph="..." />
+                <marker date="1556305094214" expanded="true" signature="238:393" ph="/// Provides the basis for describing a CameraRig Alias Association by providing the linked elements of the Camer ... " />
+                <marker date="1556305094214" expanded="true" signature="459:2552" ph="{...}" />
+                <marker date="1556305094214" expanded="true" signature="474:741" ph="PlayArea Settings" />
+                <marker date="1556305094214" expanded="true" signature="508:581" ph="/// The associated PlayArea. ... " />
+                <marker date="1556305094214" expanded="true" signature="751:1444" ph="Headset Settings" />
+                <marker date="1556305094214" expanded="true" signature="784:856" ph="/// The associated Headset. ... " />
+                <marker date="1556305094214" expanded="true" signature="1004:1083" ph="/// The associated Headset Camera. ... " />
+                <marker date="1556305094214" expanded="true" signature="1205:1294" ph="/// The associated Headset Velocity Tracker. ... " />
+                <marker date="1556305094214" expanded="true" signature="1454:1992" ph="Left Controller Settings" />
+                <marker date="1556305094214" expanded="true" signature="1495:1575" ph="/// The associated Left Controller. ... " />
+                <marker date="1556305094214" expanded="true" signature="1738:1835" ph="/// The associated Left Controller Velocity Tracker. ... " />
+                <marker date="1556305094214" expanded="false" signature="2002:2546" ph="Right Controller Settings" />
+                <marker date="1556305094214" expanded="true" signature="2044:2125" ph="/// The associated Right Controller. ... " />
+                <marker date="1556305094214" expanded="true" signature="2290:2388" ph="/// The associated Right Controller Velocity Tracker. ... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/VRTK/Prefabs/CameraRig/UnityXRCameraRig/SharedResources/Scripts/Input/UnityButtonAction.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <folding>
+                <marker date="1556305090098" expanded="true" signature="55:712" ph="{...}" />
+                <marker date="1556305090098" expanded="false" signature="68:200" ph="..." />
+                <marker date="1556305090098" expanded="true" signature="206:316" ph="/// Listens for the specified key state and emits the appropriate action. ... " />
+                <marker date="1556305090098" expanded="true" signature="367:710" ph="{...}" />
+                <marker date="1556305090098" expanded="true" signature="382:500" ph="/// The &lt;see cref=&quot;UnityEngine.KeyCode&quot;/&gt; to listen for state changes on. ... " />
+                <marker date="1556305090098" expanded="true" signature="640:704" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/resizeWithLeftController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <folding>
+                <marker date="1556323609870" expanded="true" signature="6:111" ph="..." />
+                <marker date="1556323609870" expanded="true" signature="189:755" ph="{...}" />
+                <marker date="1556323609870" expanded="true" signature="276:552" ph="{...}" />
+                <marker date="1556323609870" expanded="true" signature="324:416" ph="{...}" />
+                <marker date="1556323609870" expanded="true" signature="454:546" ph="{...}" />
+                <marker date="1556323609870" expanded="true" signature="597:753" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/trackedObjects.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="26" />
+              <folding>
+                <marker date="1556322057983" expanded="true" signature="6:92" ph="..." />
+                <marker date="1556322057983" expanded="true" signature="137:5403" ph="{...}" />
+                <marker date="1556322057983" expanded="true" signature="1205:1804" ph="/* hand model: https://poly.google.com/view/btWmPNVSKUc ... */" />
+                <marker date="1556322057983" expanded="true" signature="1861:2123" ph="{...}" />
+                <marker date="1556322057983" expanded="true" signature="1971:2096" ph="{...}" />
+                <marker date="1556322057983" expanded="true" signature="2128:2381" ph="/* @param tList list of position vectors in 3 dimensions, representing positions over time. Each element is a sam ... */" />
+                <marker date="1556322057983" expanded="true" signature="2430:2702" ph="{...}" />
+                <marker date="1556322057983" expanded="true" signature="2553:2610" ph="{...}" />
+                <marker date="1556322057983" expanded="true" signature="2740:3005" ph="{...}" />
+                <marker date="1556322057983" expanded="true" signature="2806:2847" ph="{...}" />
+                <marker date="1556322057983" expanded="true" signature="2881:2929" ph="{...}" />
+                <marker date="1556322057983" expanded="true" signature="2934:2981" ph="{...}" />
+                <marker date="1556322057983" expanded="true" signature="3031:3470" ph="{...}" />
+                <marker date="1556322057983" expanded="true" signature="3200:3301" ph="{...}" />
+                <marker date="1556322057983" expanded="true" signature="3351:3454" ph="{...}" />
+                <marker date="1556322057983" expanded="true" signature="3492:5400" ph="{...}" />
+                <marker date="1556322057983" expanded="true" signature="4093:4173" ph="/* State machine for tremor filtering ... */" />
+                <marker date="1556322057983" expanded="true" signature="4202:4322" ph="{...}" />
+                <marker date="1556322057983" expanded="true" signature="4460:4691" ph="{...}" />
+                <marker date="1556322057983" expanded="true" signature="4827:5261" ph="{...}" />
+                <marker date="1556322057983" expanded="true" signature="5337:5399" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/VRTK/Dependencies/Zinnia.Unity/Runtime/Haptics/HapticPulser.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+              <folding>
+                <marker date="1556305094153" expanded="true" signature="24:863" ph="{...}" />
+                <marker date="1556305094153" expanded="false" signature="37:182" ph="..." />
+                <marker date="1556305094153" expanded="true" signature="188:293" ph="/// Creates a single pulse on a haptic device for a given intensity. ... " />
+                <marker date="1556305094153" expanded="true" signature="348:861" ph="{...}" />
+                <marker date="1556305094153" expanded="true" signature="363:447" ph="/// The intensity of the haptic rumble. ... " />
+                <marker date="1556305094153" expanded="true" signature="577:680" ph="/// Called after &lt;see cref=&quot;Intensity&quot;/&gt; has been changed. ... " />
+                <marker date="1556305094153" expanded="true" signature="785:855" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../Reaching Experiment/Assets/Scripts/RawTrialDataSaver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/trackedObjects.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VRTK/Prefabs/CameraRig/UnityXRCameraRig/SharedResources/Scripts/Input/UnityButtonAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VRTK/Dependencies/Zinnia.Unity/Runtime/Tracking/CameraRig/LinkedAliasAssociationCollection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VRTK/Dependencies/Zinnia.Unity/Runtime/Haptics/HapticPulser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resizeWithLeftController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/showAtSpeed.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/trackedObjects.cs" />
+        <option value="$PROJECT_DIR$/Assets/resizeWithLeftController.cs" />
+        <option value="$PROJECT_DIR$/Assets/showAtSpeed.cs" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-173" />
+    <option name="y" value="135" />
     <option name="width" value="1936" />
     <option name="height" value="1176" />
   </component>
@@ -27,13 +179,13 @@
     </navigator>
     <panes>
       <pane id="AssemblyExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
       </pane>
     </panes>
   </component>
@@ -56,6 +208,20 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -67,28 +233,32 @@
       <option name="presentableId" value="Default" />
       <updated>1556307080754</updated>
       <workItem from="1556307081936" duration="14000" />
+      <workItem from="1556309380002" duration="6712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14000" />
+    <option name="totallyTimeSpent" value="6726000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Unity" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -96,19 +266,27 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -119,5 +297,131 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/VRTK/Dependencies/Zinnia.Unity/Runtime/Tracking/CameraRig/LinkedAliasAssociationCollection.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <marker date="1556305094214" expanded="true" signature="35:2554" ph="{...}" />
+            <marker date="1556305094214" expanded="false" signature="48:232" ph="..." />
+            <marker date="1556305094214" expanded="true" signature="238:393" ph="/// Provides the basis for describing a CameraRig Alias Association by providing the linked elements of the Camer ... " />
+            <marker date="1556305094214" expanded="true" signature="459:2552" ph="{...}" />
+            <marker date="1556305094214" expanded="true" signature="474:741" ph="PlayArea Settings" />
+            <marker date="1556305094214" expanded="true" signature="508:581" ph="/// The associated PlayArea. ... " />
+            <marker date="1556305094214" expanded="true" signature="751:1444" ph="Headset Settings" />
+            <marker date="1556305094214" expanded="true" signature="784:856" ph="/// The associated Headset. ... " />
+            <marker date="1556305094214" expanded="true" signature="1004:1083" ph="/// The associated Headset Camera. ... " />
+            <marker date="1556305094214" expanded="true" signature="1205:1294" ph="/// The associated Headset Velocity Tracker. ... " />
+            <marker date="1556305094214" expanded="true" signature="1454:1992" ph="Left Controller Settings" />
+            <marker date="1556305094214" expanded="true" signature="1495:1575" ph="/// The associated Left Controller. ... " />
+            <marker date="1556305094214" expanded="true" signature="1738:1835" ph="/// The associated Left Controller Velocity Tracker. ... " />
+            <marker date="1556305094214" expanded="false" signature="2002:2546" ph="Right Controller Settings" />
+            <marker date="1556305094214" expanded="true" signature="2044:2125" ph="/// The associated Right Controller. ... " />
+            <marker date="1556305094214" expanded="true" signature="2290:2388" ph="/// The associated Right Controller Velocity Tracker. ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/VRTK/Prefabs/CameraRig/UnityXRCameraRig/SharedResources/Scripts/Input/UnityButtonAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <marker date="1556305090098" expanded="true" signature="55:712" ph="{...}" />
+            <marker date="1556305090098" expanded="false" signature="68:200" ph="..." />
+            <marker date="1556305090098" expanded="true" signature="206:316" ph="/// Listens for the specified key state and emits the appropriate action. ... " />
+            <marker date="1556305090098" expanded="true" signature="367:710" ph="{...}" />
+            <marker date="1556305090098" expanded="true" signature="382:500" ph="/// The &lt;see cref=&quot;UnityEngine.KeyCode&quot;/&gt; to listen for state changes on. ... " />
+            <marker date="1556305090098" expanded="true" signature="640:704" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/VRTK/Dependencies/Zinnia.Unity/Runtime/Haptics/HapticPulser.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <marker date="1556305094153" expanded="true" signature="24:863" ph="{...}" />
+            <marker date="1556305094153" expanded="false" signature="37:182" ph="..." />
+            <marker date="1556305094153" expanded="true" signature="188:293" ph="/// Creates a single pulse on a haptic device for a given intensity. ... " />
+            <marker date="1556305094153" expanded="true" signature="348:861" ph="{...}" />
+            <marker date="1556305094153" expanded="true" signature="363:447" ph="/// The intensity of the haptic rumble. ... " />
+            <marker date="1556305094153" expanded="true" signature="577:680" ph="/// Called after &lt;see cref=&quot;Intensity&quot;/&gt; has been changed. ... " />
+            <marker date="1556305094153" expanded="true" signature="785:855" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Reaching Experiment/Assets/Scripts/RawTrialDataSaver.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/trackedObjects.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <marker date="1556322057983" expanded="true" signature="6:92" ph="..." />
+            <marker date="1556322057983" expanded="true" signature="137:5403" ph="{...}" />
+            <marker date="1556322057983" expanded="true" signature="1205:1804" ph="/* hand model: https://poly.google.com/view/btWmPNVSKUc ... */" />
+            <marker date="1556322057983" expanded="true" signature="1861:2123" ph="{...}" />
+            <marker date="1556322057983" expanded="true" signature="1971:2096" ph="{...}" />
+            <marker date="1556322057983" expanded="true" signature="2128:2381" ph="/* @param tList list of position vectors in 3 dimensions, representing positions over time. Each element is a sam ... */" />
+            <marker date="1556322057983" expanded="true" signature="2430:2702" ph="{...}" />
+            <marker date="1556322057983" expanded="true" signature="2553:2610" ph="{...}" />
+            <marker date="1556322057983" expanded="true" signature="2740:3005" ph="{...}" />
+            <marker date="1556322057983" expanded="true" signature="2806:2847" ph="{...}" />
+            <marker date="1556322057983" expanded="true" signature="2881:2929" ph="{...}" />
+            <marker date="1556322057983" expanded="true" signature="2934:2981" ph="{...}" />
+            <marker date="1556322057983" expanded="true" signature="3031:3470" ph="{...}" />
+            <marker date="1556322057983" expanded="true" signature="3200:3301" ph="{...}" />
+            <marker date="1556322057983" expanded="true" signature="3351:3454" ph="{...}" />
+            <marker date="1556322057983" expanded="true" signature="3492:5400" ph="{...}" />
+            <marker date="1556322057983" expanded="true" signature="4093:4173" ph="/* State machine for tremor filtering ... */" />
+            <marker date="1556322057983" expanded="true" signature="4202:4322" ph="{...}" />
+            <marker date="1556322057983" expanded="true" signature="4460:4691" ph="{...}" />
+            <marker date="1556322057983" expanded="true" signature="4827:5261" ph="{...}" />
+            <marker date="1556322057983" expanded="true" signature="5337:5399" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/resizeWithLeftController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <marker date="1556323609870" expanded="true" signature="6:111" ph="..." />
+            <marker date="1556323609870" expanded="true" signature="189:755" ph="{...}" />
+            <marker date="1556323609870" expanded="true" signature="276:552" ph="{...}" />
+            <marker date="1556323609870" expanded="true" signature="324:416" ph="{...}" />
+            <marker date="1556323609870" expanded="true" signature="454:546" ph="{...}" />
+            <marker date="1556323609870" expanded="true" signature="597:753" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/showAtSpeed.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <marker date="1556323967519" expanded="true" signature="6:92" ph="..." />
+            <marker date="1556323967519" expanded="true" signature="133:860" ph="{...}" />
+            <marker date="1556323967519" expanded="true" signature="330:858" ph="{...}" />
+            <marker date="1556323967519" expanded="true" signature="586:715" ph="{...}" />
+            <marker date="1556323967519" expanded="true" signature="728:852" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
