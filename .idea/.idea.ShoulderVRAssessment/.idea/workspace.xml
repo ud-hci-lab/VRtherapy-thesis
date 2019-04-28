@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="374efd9b-3d38-46b9-abcc-37205dac88f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoulderVRAssessment/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoulderVRAssessment/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoulderVRAssessment/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoulderVRAssessment/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoulderVRAssessment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoulderVRAssessment/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/changeColorOnEnter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/changeColorOnEnter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/showAtSpeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/showAtSpeed.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,134 +14,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/Unity-ZeroMQ-Example-master/Unity-ZeroMQ-Example-master/Assets/ClientObject.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="896">
+              <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#113#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/Unity-ZeroMQ-Example-master/Unity-ZeroMQ-Example-master/Assets/ServerObject.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#102#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/showAtSpeed.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/RecordTrackedAlias.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            <state relative-caret-position="400">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
-                <marker date="1556325992056" expanded="true" signature="6:92" ph="..." />
-                <marker date="1556325992056" expanded="true" signature="133:763" ph="{...}" />
-                <marker date="1556325992056" expanded="true" signature="330:393" ph="{...}" />
-                <marker date="1556325992056" expanded="true" signature="411:761" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/VRTK/Prefabs/CameraRig/UnityXRCameraRig/SharedResources/Scripts/Input/UnityButtonAction.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-              <folding>
-                <marker date="1556305090098" expanded="true" signature="55:712" ph="{...}" />
-                <marker date="1556305090098" expanded="false" signature="68:200" ph="..." />
-                <marker date="1556305090098" expanded="true" signature="206:316" ph="/// Listens for the specified key state and emits the appropriate action. ... " />
-                <marker date="1556305090098" expanded="true" signature="367:710" ph="{...}" />
-                <marker date="1556305090098" expanded="true" signature="382:500" ph="/// The &lt;see cref=&quot;UnityEngine.KeyCode&quot;/&gt; to listen for state changes on. ... " />
-                <marker date="1556305090098" expanded="true" signature="640:704" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/resizeWithLeftController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-              <folding>
-                <marker date="1556324449926" expanded="true" signature="6:111" ph="..." />
-                <marker date="1556324449926" expanded="true" signature="189:781" ph="{...}" />
-                <marker date="1556324449926" expanded="true" signature="277:553" ph="{...}" />
-                <marker date="1556324449926" expanded="true" signature="325:417" ph="{...}" />
-                <marker date="1556324449926" expanded="true" signature="455:547" ph="{...}" />
-                <marker date="1556324449926" expanded="true" signature="598:779" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/changeColorOnEnter.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="120" />
-              <folding>
-                <marker date="1556325950759" expanded="false" signature="6:78" ph="..." />
-                <marker date="1556325950759" expanded="true" signature="127:979" ph="{...}" />
-                <marker date="1556325950759" expanded="true" signature="286:418" ph="{...}" />
-                <marker date="1556325950759" expanded="true" signature="451:527" ph="{...}" />
-                <marker date="1556325950759" expanded="true" signature="615:976" ph="{...}" />
-                <marker date="1556325950759" expanded="true" signature="700:961" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/ResetDots.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="55" />
-              <folding>
-                <marker date="1556325804210" expanded="false" signature="6:78" ph="..." />
-                <marker date="1556325804210" expanded="true" signature="118:734" ph="{...}" />
-                <marker date="1556325804210" expanded="true" signature="255:435" ph="{...}" />
-                <marker date="1556325804210" expanded="true" signature="507:732" ph="{...}" />
-                <marker date="1556325804210" expanded="true" signature="629:726" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/trackedObjects.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="26" />
-              <folding>
-                <marker date="1556322057983" expanded="true" signature="6:92" ph="..." />
-                <marker date="1556322057983" expanded="true" signature="137:5403" ph="{...}" />
-                <marker date="1556322057983" expanded="true" signature="1205:1804" ph="/* hand model: https://poly.google.com/view/btWmPNVSKUc ... */" />
-                <marker date="1556322057983" expanded="true" signature="1861:2123" ph="{...}" />
-                <marker date="1556322057983" expanded="true" signature="1971:2096" ph="{...}" />
-                <marker date="1556322057983" expanded="true" signature="2128:2381" ph="/* @param tList list of position vectors in 3 dimensions, representing positions over time. Each element is a sam ... */" />
-                <marker date="1556322057983" expanded="true" signature="2430:2702" ph="{...}" />
-                <marker date="1556322057983" expanded="true" signature="2553:2610" ph="{...}" />
-                <marker date="1556322057983" expanded="true" signature="2740:3005" ph="{...}" />
-                <marker date="1556322057983" expanded="true" signature="2806:2847" ph="{...}" />
-                <marker date="1556322057983" expanded="true" signature="2881:2929" ph="{...}" />
-                <marker date="1556322057983" expanded="true" signature="2934:2981" ph="{...}" />
-                <marker date="1556322057983" expanded="true" signature="3031:3470" ph="{...}" />
-                <marker date="1556322057983" expanded="true" signature="3200:3301" ph="{...}" />
-                <marker date="1556322057983" expanded="true" signature="3351:3454" ph="{...}" />
-                <marker date="1556322057983" expanded="true" signature="3492:5400" ph="{...}" />
-                <marker date="1556322057983" expanded="true" signature="4093:4173" ph="/* State machine for tremor filtering ... */" />
-                <marker date="1556322057983" expanded="true" signature="4202:4322" ph="{...}" />
-                <marker date="1556322057983" expanded="true" signature="4460:4691" ph="{...}" />
-                <marker date="1556322057983" expanded="true" signature="4827:5261" ph="{...}" />
-                <marker date="1556322057983" expanded="true" signature="5337:5399" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/VRTK/Dependencies/Zinnia.Unity/Runtime/Haptics/HapticPulser.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-              <folding>
-                <marker date="1556305094153" expanded="true" signature="24:863" ph="{...}" />
-                <marker date="1556305094153" expanded="false" signature="37:182" ph="..." />
-                <marker date="1556305094153" expanded="true" signature="188:293" ph="/// Creates a single pulse on a haptic device for a given intensity. ... " />
-                <marker date="1556305094153" expanded="true" signature="348:861" ph="{...}" />
-                <marker date="1556305094153" expanded="true" signature="363:447" ph="/// The intensity of the haptic rumble. ... " />
-                <marker date="1556305094153" expanded="true" signature="577:680" ph="/// Called after &lt;see cref=&quot;Intensity&quot;/&gt; has been changed. ... " />
-                <marker date="1556305094153" expanded="true" signature="785:855" ph="{...}" />
+                <marker date="1556422869663" expanded="false" signature="6:78" ph="..." />
+                <marker date="1556422869663" expanded="true" signature="127:1300" ph="{...}" />
+                <marker date="1556422869663" expanded="true" signature="406:676" ph="{...}" />
+                <marker date="1556422869663" expanded="true" signature="735:849" ph="{...}" />
+                <marker date="1556422869663" expanded="true" signature="909:1298" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -160,13 +67,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Reaching Experiment/Assets/Scripts/RawTrialDataSaver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RecordTrackedAlias.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/trackedObjects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VRTK/Prefabs/CameraRig/UnityXRCameraRig/SharedResources/Scripts/Input/UnityButtonAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VRTK/Dependencies/Zinnia.Unity/Runtime/Tracking/CameraRig/LinkedAliasAssociationCollection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VRTK/Dependencies/Zinnia.Unity/Runtime/Haptics/HapticPulser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/Unity-ZeroMQ-Example-master/Unity-ZeroMQ-Example-master/Assets/ClientObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ResetDots.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resizeWithLeftController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/showAtSpeed.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/Unity-ZeroMQ-Example-master/Unity-ZeroMQ-Example-master/Assets/ServerObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/changeColorOnEnter.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -177,6 +87,7 @@
         <option value="$PROJECT_DIR$/Assets/ResetDots.cs" />
         <option value="$PROJECT_DIR$/Assets/changeColorOnEnter.cs" />
         <option value="$PROJECT_DIR$/Assets/showAtSpeed.cs" />
+        <option value="$PROJECT_DIR$/Assets/RecordTrackedAlias.cs" />
       </list>
     </option>
   </component>
@@ -186,19 +97,20 @@
     <option name="width" value="1936" />
     <option name="height" value="1176" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="AssemblyExplorer" />
-      <pane id="UnityExplorer">
-        <option name="show-hidden-items" value="false" />
-        <option name="show-project-names" value="true" />
-      </pane>
       <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
       </pane>
     </panes>
   </component>
@@ -246,12 +158,14 @@
       <option name="presentableId" value="Default" />
       <updated>1556307080754</updated>
       <workItem from="1556307081936" duration="14000" />
-      <workItem from="1556309380002" duration="8737000" />
+      <workItem from="1556309380002" duration="10168000" />
+      <workItem from="1556421286712" duration="25000" />
+      <workItem from="1556421476993" duration="1406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8751000" />
+    <option name="totallyTimeSpent" value="11613000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -266,12 +180,11 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25772098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Unity" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -287,6 +200,7 @@
       <window_info anchor="bottom" id="Unit Tests" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Unity" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -410,7 +324,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/resizeWithLeftController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <marker date="1556324449926" expanded="true" signature="6:111" ph="..." />
             <marker date="1556324449926" expanded="true" signature="189:781" ph="{...}" />
@@ -453,13 +367,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/showAtSpeed.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        <state relative-caret-position="448">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <marker date="1556325992056" expanded="true" signature="6:92" ph="..." />
             <marker date="1556325992056" expanded="true" signature="133:763" ph="{...}" />
             <marker date="1556325992056" expanded="true" signature="330:393" ph="{...}" />
             <marker date="1556325992056" expanded="true" signature="411:761" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Unity-ZeroMQ-Example-master/Unity-ZeroMQ-Example-master/Assets/ClientObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Unity-ZeroMQ-Example-master/Unity-ZeroMQ-Example-master/Assets/ServerObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/RecordTrackedAlias.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <marker date="1556422869663" expanded="false" signature="6:78" ph="..." />
+            <marker date="1556422869663" expanded="true" signature="127:1300" ph="{...}" />
+            <marker date="1556422869663" expanded="true" signature="406:676" ph="{...}" />
+            <marker date="1556422869663" expanded="true" signature="735:849" ph="{...}" />
+            <marker date="1556422869663" expanded="true" signature="909:1298" ph="{...}" />
           </folding>
         </state>
       </provider>

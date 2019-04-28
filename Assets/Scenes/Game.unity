@@ -1088,7 +1088,6 @@ GameObject:
   - component: {fileID: 156969894}
   - component: {fileID: 156969893}
   - component: {fileID: 156969892}
-  - component: {fileID: 156969895}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1144,25 +1143,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &156969895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156969891}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c2328d6320bee44a9b7063bc055b418, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RightController: {fileID: 0}
-  HMD: {fileID: 0}
-  filterSampleSize: 70
-  filteredPosition: {x: 0, y: 0, z: 0}
-  filterOn: 0
-  usableSineWaveData: 
-  usableStablePointData: 0
 --- !u!1 &191617265
 GameObject:
   m_ObjectHideFlags: 0
