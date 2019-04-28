@@ -1088,6 +1088,7 @@ GameObject:
   - component: {fileID: 156969894}
   - component: {fileID: 156969893}
   - component: {fileID: 156969892}
+  - component: {fileID: 156969895}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1143,6 +1144,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &156969895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156969891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f810ab65a9b3df4b896a3cba5d2768e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackedAlias: {fileID: 588888183}
 --- !u!1 &191617265
 GameObject:
   m_ObjectHideFlags: 0
@@ -3459,6 +3473,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &588888183 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1540271613746846, guid: 114b3c3ce4645364a97c8f0803bed65b,
+    type: 3}
+  m_PrefabInstance: {fileID: 749300135}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &614845270
 GameObject:
   m_ObjectHideFlags: 0
@@ -4020,7 +4040,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 749300135}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 588888183}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ba5508f1fd2aa44b980ea2e942d3ee8, type: 3}

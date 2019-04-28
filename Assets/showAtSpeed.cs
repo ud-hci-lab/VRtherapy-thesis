@@ -19,7 +19,7 @@ public class showAtSpeed : MonoBehaviour
     {
         Vector3 currentPos = controllerPos.transform.position;
         float speed = Vector3.Distance(currentPos, priorPos);
-        Debug.Log("At " + Time.time*1000f +". Hand Position:" + controllerPos.transform.position.ToString("F4"));
+//        Debug.Log("At " + Time.time*1000f +". Hand Position:" + controllerPos.transform.position.ToString("F4"));
         
         priorPos = currentPos;
 

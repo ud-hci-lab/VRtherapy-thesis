@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="374efd9b-3d38-46b9-abcc-37205dac88f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoulderVRAssessment/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoulderVRAssessment/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoulderVRAssessment/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoulderVRAssessment/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoulderVRAssessment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoulderVRAssessment/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RecordTrackedAlias.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RecordTrackedAlias.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/showAtSpeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/showAtSpeed.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,17 +39,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/RecordTrackedAlias.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="416">
+              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
               <folding>
-                <marker date="1556422869663" expanded="false" signature="6:78" ph="..." />
-                <marker date="1556422869663" expanded="true" signature="127:1300" ph="{...}" />
-                <marker date="1556422869663" expanded="true" signature="406:676" ph="{...}" />
-                <marker date="1556422869663" expanded="true" signature="735:849" ph="{...}" />
-                <marker date="1556422869663" expanded="true" signature="909:1298" ph="{...}" />
+                <marker date="1556422984522" expanded="false" signature="6:78" ph="..." />
+                <marker date="1556422984522" expanded="true" signature="127:1259" ph="{...}" />
+                <marker date="1556422984522" expanded="true" signature="406:676" ph="{...}" />
+                <marker date="1556422984522" expanded="true" signature="735:860" ph="{...}" />
+                <marker date="1556422984522" expanded="true" signature="920:1257" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/showAtSpeed.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+              <folding>
+                <marker date="1556423004999" expanded="false" signature="6:92" ph="..." />
+                <marker date="1556423004999" expanded="true" signature="133:765" ph="{...}" />
+                <marker date="1556423004999" expanded="true" signature="330:393" ph="{...}" />
+                <marker date="1556423004999" expanded="true" signature="411:763" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -86,8 +101,8 @@
         <option value="$PROJECT_DIR$/Assets/resizeWithLeftController.cs" />
         <option value="$PROJECT_DIR$/Assets/ResetDots.cs" />
         <option value="$PROJECT_DIR$/Assets/changeColorOnEnter.cs" />
-        <option value="$PROJECT_DIR$/Assets/showAtSpeed.cs" />
         <option value="$PROJECT_DIR$/Assets/RecordTrackedAlias.cs" />
+        <option value="$PROJECT_DIR$/Assets/showAtSpeed.cs" />
       </list>
     </option>
   </component>
@@ -160,12 +175,12 @@
       <workItem from="1556307081936" duration="14000" />
       <workItem from="1556309380002" duration="10168000" />
       <workItem from="1556421286712" duration="25000" />
-      <workItem from="1556421476993" duration="1406000" />
+      <workItem from="1556421476993" duration="1526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11613000" />
+    <option name="totallyTimeSpent" value="11733000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -365,19 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/showAtSpeed.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <marker date="1556325992056" expanded="true" signature="6:92" ph="..." />
-            <marker date="1556325992056" expanded="true" signature="133:763" ph="{...}" />
-            <marker date="1556325992056" expanded="true" signature="330:393" ph="{...}" />
-            <marker date="1556325992056" expanded="true" signature="411:761" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/Unity-ZeroMQ-Example-master/Unity-ZeroMQ-Example-master/Assets/ClientObject.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="896">
@@ -400,14 +402,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/RecordTrackedAlias.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="416">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
           <folding>
-            <marker date="1556422869663" expanded="false" signature="6:78" ph="..." />
-            <marker date="1556422869663" expanded="true" signature="127:1300" ph="{...}" />
-            <marker date="1556422869663" expanded="true" signature="406:676" ph="{...}" />
-            <marker date="1556422869663" expanded="true" signature="735:849" ph="{...}" />
-            <marker date="1556422869663" expanded="true" signature="909:1298" ph="{...}" />
+            <marker date="1556422984522" expanded="false" signature="6:78" ph="..." />
+            <marker date="1556422984522" expanded="true" signature="127:1259" ph="{...}" />
+            <marker date="1556422984522" expanded="true" signature="406:676" ph="{...}" />
+            <marker date="1556422984522" expanded="true" signature="735:860" ph="{...}" />
+            <marker date="1556422984522" expanded="true" signature="920:1257" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/showAtSpeed.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <folding>
+            <marker date="1556423004999" expanded="false" signature="6:92" ph="..." />
+            <marker date="1556423004999" expanded="true" signature="133:765" ph="{...}" />
+            <marker date="1556423004999" expanded="true" signature="330:393" ph="{...}" />
+            <marker date="1556423004999" expanded="true" signature="411:763" ph="{...}" />
           </folding>
         </state>
       </provider>

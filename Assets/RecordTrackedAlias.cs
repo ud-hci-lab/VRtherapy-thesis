@@ -26,12 +26,12 @@ public class RecordTrackedAlias : MonoBehaviour
     {
         // hmd.transform.position.x, hmd.transform.rotation.eulerAngles;
 
-        TrackedString(hmd);
+        Debug.Log(TrackedString(hmd));
     }
 
     private string TrackedString(GameObject trackedObject)
     {
-        if (trackedObject.transform == null) return;
+
         var outString =
             $"{trackedObject.transform.position.x},{trackedObject.transform.position.y},{trackedObject.transform.position.z},{trackedObject.transform.rotation.eulerAngles.x},{trackedObject.transform.rotation.eulerAngles.y},{trackedObject.transform.rotation.eulerAngles.z}";
         return outString;
