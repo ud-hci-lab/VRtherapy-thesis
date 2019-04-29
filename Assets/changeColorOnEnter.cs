@@ -40,16 +40,18 @@ public class changeColorOnEnter : MonoBehaviour
         if (hasBeenGreened == false)
         {
             hasBeenGreened = true;
-//            Debug.Log("Success hit at" + Time.time*1000f +". Hand Position:" + other.transform.position.ToString("F4")
             audd.Play();
 
-            var x = RecordTrackedAlias.Tracked6DString(aliasControllerScript.controllerR.transform);
-            var timeString = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString("F4");
-            taskControllerScript.taskObservations.Add(timeString);
-            Debug.Log(timeString);
-            
+            AddObservationToList();
         }
         
     }
 
+    private void AddObservationToList()
+    {
+        var x = RecordTrackedAlias.Tracked6DString(aliasControllerScript.controllerR.transform);
+        var timeString = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+        var combinedObservation = timeString + "," + x;
+        taskControllerScript.taskObservations.Add(combinedObservation);
+    }
 }

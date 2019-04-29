@@ -12,6 +12,12 @@ URL: https://poly.google.com/view/cEH5v5HWqt9
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Simple VR HMD
+Author: Aaron Clifford
+URL: https://poly.google.com/view/aG7h3TTjc51
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Terrain rough
 Author: Miguelangelo Rosario
 URL: https://poly.google.com/view/2vy4gFPKZMl

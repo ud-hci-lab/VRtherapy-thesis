@@ -8,10 +8,10 @@ using Zinnia.Haptics;
 
 public class TaskController : MonoBehaviour
 {
-    public GameObject task;
     public GameObject otherController;
+    [HideInInspector]
     public List<string> taskObservations;
-    private const string taskHeaderWithTime = "time_ms,pos_x,pos_y,pos_z,rot_x,rot_y,rot_z";
+    private const string taskHeaderWithTime = "time_ms,pos_x,pos_y,pos_z,rot_x,rot_y,rot_z\n";
 
 
     private void Start()
@@ -23,10 +23,10 @@ public class TaskController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.L))
         {
-            task.transform.localScale += new Vector3(0.1F, 0.1f, 0.1f);
+            transform.localScale += new Vector3(0.1F, 0.1f, 0.1f);
         } else if (Input.GetKeyDown(KeyCode.S))
         {
-            task.transform.localScale -= new Vector3(0.1F, 0.1f, 0.1f);
+           transform.localScale -= new Vector3(0.1F, 0.1f, 0.1f);
         }
         else if (Input.GetKeyDown(KeyCode.Return))
         {
@@ -41,12 +41,12 @@ public class TaskController : MonoBehaviour
         Debug.Log("task len:" + taskObservations.Count);
         var startTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds() * 1000f;
         RecordTrackedAlias.SavePositionsAndRotationsToDiskAndAnalyze(taskHeaderWithTime, taskObservations,
-            $"taskTracking_{startTime:F4}");
+            $"recording_{startTime}_taskTracking");
     }
 
     public void LockTransformToController()
     {
         Debug.Log("attempting to lock controller");
-        task.transform.SetPositionAndRotation(otherController.transform.position + otherController.transform.forward*0.2f, otherController.transform.rotation);
+        transform.SetPositionAndRotation(otherController.transform.position + otherController.transform.forward*0.2f, otherController.transform.rotation);
     }
 } 

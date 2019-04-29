@@ -70,8 +70,7 @@ public class RecordTrackedAlias : MonoBehaviour
 
     private void  FixedUpdate()
     {
-        var x = DateTimeOffset.UtcNow.ToUnixTimeSeconds()
-                    .ToString("F4") +
+        var x = DateTimeOffset.UtcNow.ToUnixTimeSeconds()*1000f +
                 "," +
                 Tracked6DString(hmd.transform) +
                 "," +
@@ -81,7 +80,7 @@ public class RecordTrackedAlias : MonoBehaviour
         trackedObservations.Add(x);
         if (!Input.GetKeyDown(KeyCode.Return)) return;
         var startTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
-        SavePositionsAndRotationsToDiskAndAnalyze(trackingHeaderWithTime, trackedObservations, $"aliasTracking_{startTime}");
+        SavePositionsAndRotationsToDiskAndAnalyze(trackingHeaderWithTime, trackedObservations, $"recording_{startTime}_aliasTracking");
         Debug.Log("completed save. elapsed seconds:" + BCTools.DeltaTimeString(startTime));;
 
     }
