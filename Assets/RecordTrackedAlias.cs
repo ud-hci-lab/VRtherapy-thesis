@@ -95,6 +95,6 @@ public class RecordTrackedAlias : MonoBehaviour
 
     public static string GameMillisToString()
     {
-        return (Time.time*1000f).ToString("F4");
+        return (Time.time*1000f).ToString("F0");
     }
 }

@@ -43,6 +43,7 @@ public class changeColorOnEnter : MonoBehaviour
             audd.Play();
 
             AddObservationToList();
+            taskControllerScript.tasksAchieved += 1;
         }
         
     }

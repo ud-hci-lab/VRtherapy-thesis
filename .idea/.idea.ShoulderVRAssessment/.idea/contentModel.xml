@@ -286,6 +286,7 @@
         <e p="showVFXonEnter.cs" t="Include" />
         <e p="subtitleToggler.cs" t="Include" />
         <e p="TaskController.cs" t="Include" />
+        <e p="TaskCounter.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
             <e p="Fonts" t="Include">
@@ -356,6 +357,7 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
+        <e p="TimeStamp.cs" t="Include" />
         <e p="trackedObjects.cs" t="Include" />
         <e p="VRTK" t="Include">
           <e p="Dependencies" t="Include">

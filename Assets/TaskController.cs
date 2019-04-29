@@ -10,6 +10,7 @@ public class TaskController : MonoBehaviour
 {
     public GameObject otherController;
     private int _framesSinceLastSave = 0;
+    public int tasksAchieved = 0;
     [HideInInspector]
     public List<string> taskObservations;
     private const string taskHeaderWithTime = "time_ms,pos_x,pos_y,pos_z,rot_x,rot_y,rot_z\n";
@@ -26,6 +27,7 @@ if (Input.GetKeyDown(KeyCode.Return) && _framesSinceLastSave >= 90)
             Debug.Log("hihi enabled");
             SaveTasks();
             taskObservations.Clear();
+            tasksAchieved = 0;
             _framesSinceLastSave = 0;
         }
 
