@@ -279,10 +279,10 @@
         </e>
         <e p="RecordTrackedAlias.cs" t="Include" />
         <e p="ResetDots.cs" t="Include" />
-        <e p="resizeWithLeftController.cs" t="Include" />
         <e p="showAtSpeed.cs" t="Include" />
         <e p="showVFXonEnter.cs" t="Include" />
         <e p="subtitleToggler.cs" t="Include" />
+        <e p="TaskController.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
             <e p="Fonts" t="Include">
