@@ -68,9 +68,10 @@ public class RecordTrackedAlias : MonoBehaviour
         
     }
 
+    private int _framesSinceLastSave = 0;
     private void  FixedUpdate()
     {
-        var x = DateTimeOffset.UtcNow.ToUnixTimeSeconds()*1000f +
+        var x = GameMillisToString() +
                 "," +
                 Tracked6DString(hmd.transform) +
                 "," +
@@ -78,12 +79,22 @@ public class RecordTrackedAlias : MonoBehaviour
                 "," +
                 Tracked6DString(controllerR.transform);
         trackedObservations.Add(x);
-        if (!Input.GetKeyDown(KeyCode.Return)) return;
-        var startTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
-        SavePositionsAndRotationsToDiskAndAnalyze(trackingHeaderWithTime, trackedObservations, $"recording_{startTime}_aliasTracking");
-        Debug.Log("completed save. elapsed seconds:" + BCTools.DeltaTimeString(startTime));;
+
+        if (Input.GetKeyDown(KeyCode.Return) && _framesSinceLastSave >= 90)
+        {
+             var startTime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+                    SavePositionsAndRotationsToDiskAndAnalyze(trackingHeaderWithTime, trackedObservations, $"recording_{startTime}_aliasTracking");
+                    Debug.Log("completed save. elapsed seconds:" + BCTools.DeltaTimeString(startTime) + "and the frame count for save was " + _framesSinceLastSave);
+                    _framesSinceLastSave = 0;
+        }
+
+        _framesSinceLastSave += 1;
+
 
     }
 
-
+    public static string GameMillisToString()
+    {
+        return (Time.time*1000f).ToString("F4");
+    }
 }

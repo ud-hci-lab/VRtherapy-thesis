@@ -50,7 +50,7 @@ public class changeColorOnEnter : MonoBehaviour
     private void AddObservationToList()
     {
         var x = RecordTrackedAlias.Tracked6DString(aliasControllerScript.controllerR.transform);
-        var timeString = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+        var timeString = RecordTrackedAlias.GameMillisToString();
         var combinedObservation = timeString + "," + x;
         taskControllerScript.taskObservations.Add(combinedObservation);
     }

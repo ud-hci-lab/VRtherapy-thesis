@@ -6,9 +6,9 @@ using UnityEngine;
 public class BCTools : MonoBehaviour
 {
 
-    public static string DeltaTimeString(float priorTimeInSeconds)
+    public static string DeltaTimeString(float unixTimeStartMilliseconds)
     {
-        return (DateTimeOffset.UtcNow.ToUnixTimeSeconds() - priorTimeInSeconds).ToString("F5");
+        return (DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() - unixTimeStartMilliseconds).ToString("F5");
     }
  
 }

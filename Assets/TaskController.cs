@@ -9,6 +9,7 @@ using Zinnia.Haptics;
 public class TaskController : MonoBehaviour
 {
     public GameObject otherController;
+    private int _framesSinceLastSave = 0;
     [HideInInspector]
     public List<string> taskObservations;
     private const string taskHeaderWithTime = "time_ms,pos_x,pos_y,pos_z,rot_x,rot_y,rot_z\n";
@@ -20,6 +21,15 @@ public class TaskController : MonoBehaviour
     }
     private void FixedUpdate()
     {
+if (Input.GetKeyDown(KeyCode.Return) && _framesSinceLastSave >= 90)
+        {
+            Debug.Log("hihi enabled");
+            SaveTasks();
+            taskObservations.Clear();
+            _framesSinceLastSave = 0;
+        }
+
+_framesSinceLastSave += 1;
 
         if (Input.GetKeyDown(KeyCode.L))
         {
@@ -28,20 +38,16 @@ public class TaskController : MonoBehaviour
         {
            transform.localScale -= new Vector3(0.1F, 0.1f, 0.1f);
         }
-        else if (Input.GetKeyDown(KeyCode.Return))
-        {
-            Debug.Log("hihi enabled");
-            SaveTasks();
-        }
     }
 
     public void SaveTasks()
     {
         Debug.Log("attempting to save the tasks");
         Debug.Log("task len:" + taskObservations.Count);
-        var startTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds() * 1000f;
+        var startTime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         RecordTrackedAlias.SavePositionsAndRotationsToDiskAndAnalyze(taskHeaderWithTime, taskObservations,
             $"recording_{startTime}_taskTracking");
+        
     }
 
     public void LockTransformToController()
