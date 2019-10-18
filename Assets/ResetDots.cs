@@ -8,7 +8,7 @@ public class ResetDots : MonoBehaviour
     private changeColorOnEnter[] colorChangerScriptList;
     private void Start()
     {
-        colorChangerScriptList = transform.GetChild(1).GetComponentsInChildren<changeColorOnEnter>();
+        colorChangerScriptList = transform.GetChild(0).GetComponentsInChildren<changeColorOnEnter>();
         Debug.Log(colorChangerScriptList.Length + "dots to hit");
     }
 
@@ -19,7 +19,7 @@ public class ResetDots : MonoBehaviour
         Debug.Log("Reset values at" + Time.time*1000f);
         foreach (var colorScript in colorChangerScriptList)
         {
-            colorScript.ResetToGreen();
+            colorScript.ResetToRed();
             Debug.Log("resetting!");
         }
     }

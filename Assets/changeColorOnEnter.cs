@@ -22,11 +22,19 @@ public class changeColorOnEnter : MonoBehaviour
         hasBeenGreened = false;
         aliasControllerScript = GameObject.Find("EventSystem").GetComponent<RecordTrackedAlias>();
         audd = GetComponent<AudioSource>();
-        taskControllerScript = transform.parent.parent.GetComponent<TaskController>();
+        if (transform.parent.parent.tag == "Task")
+        {
+            taskControllerScript = transform.parent.parent.GetComponent<TaskController>();
+        }
+        else
+        {
+            taskControllerScript = transform.parent.parent.parent.GetComponent<TaskController>();
+        }
+        
     }
 
 
-    public void ResetToGreen()
+    public void ResetToRed()
     {
         mMaterial.color = pre;
         hasBeenGreened = false;
@@ -35,16 +43,21 @@ public class changeColorOnEnter : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
     {
-        
-        mMaterial.color = post;
-        if (hasBeenGreened == false)
+        Debug.Log("collide (name) : " + other.gameObject.name);
+        //ensure that the colder is not another part of the model
+        if (other.gameObject.GetComponent<changeColorOnEnter>() == null)
         {
-            hasBeenGreened = true;
-            audd.Play();
+            mMaterial.color = post;
+            if (hasBeenGreened == false)
+            {
+                hasBeenGreened = true;
+                audd.Play();
 
-            AddObservationToList();
-            taskControllerScript.tasksAchieved += 1;
+                AddObservationToList();
+                taskControllerScript.tasksAchieved += 1;
+            }
         }
+       
         
     }
 
