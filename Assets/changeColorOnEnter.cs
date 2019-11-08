@@ -45,7 +45,7 @@ public class changeColorOnEnter : MonoBehaviour
     {
         Debug.Log("collide (name) : " + other.gameObject.name);
         //ensure that the colder is not another part of the model
-        if (other.gameObject.GetComponent<changeColorOnEnter>() == null)
+        if (other.gameObject.tag == "PTAsset")
         {
             mMaterial.color = post;
             if (hasBeenGreened == false)

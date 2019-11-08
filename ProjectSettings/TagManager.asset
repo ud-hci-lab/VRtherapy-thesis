@@ -9,6 +9,8 @@ TagManager:
   - Menu
   - FishTask
   - Task
+  - TaskAnimation
+  - PTAsset
   layers:
   - Default
   - TransparentFX

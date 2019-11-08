@@ -10,12 +10,15 @@ public class TaskCounter : MonoBehaviour
     private TextMeshProUGUI tmp;
 
     private string totalCount;
+    private int totalInt;
+    private Animator taskAnimator; 
 
     // Start is called before the first frame update
     private void Start()
     {
         tmp = this.GetComponent<TextMeshProUGUI>();
         tmp.text = "0";
+
     }
 
     // Update is called once per frame
@@ -26,13 +29,15 @@ public class TaskCounter : MonoBehaviour
             if (GameObject.FindGameObjectWithTag("Task"))
             {
                 taskControllerScript = GameObject.FindGameObjectWithTag("Task").GetComponent<TaskController>();
-                if (GameObject.FindGameObjectWithTag("Task").name == "FishTask")
+                if (GameObject.FindGameObjectWithTag("Task").name == "ChickenTask")
                 {
                     totalCount = "/150";
+                    totalInt = 150;
                 }
                 else
                 {
                     totalCount = "/68";
+                    totalInt = 68;
                 }
             }
         }
@@ -42,6 +47,11 @@ public class TaskCounter : MonoBehaviour
             {
                 
                 tmp.text = taskControllerScript.tasksAchieved + totalCount;
+                if (taskControllerScript.tasksAchieved == totalInt && taskAnimator == null)
+                {
+                    taskAnimator = GameObject.FindGameObjectWithTag("TaskAnimation").GetComponent<Animator>();
+                    taskAnimator.SetBool("Victory", true);
+                }
             }
         }
        

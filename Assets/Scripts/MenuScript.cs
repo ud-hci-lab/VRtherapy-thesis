@@ -24,7 +24,7 @@ public class MenuScript : MonoBehaviour
     public void FishIntialization()
     {
         fishDots.SetActive(true);
-        Vector3 fishPosition = new Vector3(0.0f, 1.0f, 1.908f);
+        Vector3 fishPosition = new Vector3(-0.038f, 1.38f, 1.33f);
         fishDots.transform.position = fishPosition;
         Vector3 buttonPosition = new Vector3(-10f, -10f, -10f);
         fishButton.transform.position = buttonPosition;
@@ -36,7 +36,7 @@ public class MenuScript : MonoBehaviour
     public void ChickenIntialization()
     {
         chickenDots.SetActive(true);
-        Vector3 chickenPosition = new Vector3(0.0f, 1.0f, 1.908f);
+        Vector3 chickenPosition = new Vector3(-0.591f, 1.238f, 1.05f);
         chickenDots.transform.position = chickenPosition;
         Vector3 buttonPosition = new Vector3(-10f, -10f, -10f);
         fishButton.transform.position = buttonPosition;
