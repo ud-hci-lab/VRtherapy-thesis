@@ -18,7 +18,7 @@ public class MenuScript : MonoBehaviour
     }
     void OnCollisionEnter(Collision collide)
     {
-        Debug.Log("collide (name) : " + collide.collider.gameObject.name);
+        Debug.Log("HELLO collide (name) : " + collide.collider.gameObject.name + " Collide: " + collide + " collide(name) : " + collide.collider.gameObject.name);
     }
 
     public void FishIntialization()
