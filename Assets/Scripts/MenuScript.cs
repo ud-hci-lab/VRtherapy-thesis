@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class MenuScript : MonoBehaviour
+public class MenuScript : MonoBehaviour, IPointerClickHandler
 {
     public GameObject fishDots;
     public GameObject fishMenu;
@@ -10,14 +11,37 @@ public class MenuScript : MonoBehaviour
     public GameObject chickenDots;
     public GameObject chickenMenu;
     public GameObject chickenButton;
+    public GameObject pointer;
 
     private void Start()
     {
         fishDots.SetActive(false);
         chickenDots.SetActive(false);
     }
+
+    
+    public void OnPointerClick(PointerEventData pointerEventData)
+    {
+        //Use this to tell when the user right-clicks on the Button
+        if (pointerEventData.button == PointerEventData.InputButton.Right)
+        {
+            //Output to console the clicked GameObject's name and the following message. You can replace this with your own actions for when clicking the GameObject.
+            Debug.Log(name + " Game Object Right Clicked!");
+           // OnCollisionEnter(pointerEventData);
+        }
+    }
+
     void OnCollisionEnter(Collision collide)
     {
+        /*if(gameObject.name=="Cube" && collide.collider.gameObject.name=="DefaultMesh")
+        {
+            ChickenIntialization();
+        } else if(gameObject.name=="Cube (1)" && collide.collider.gameObject.name == "DefaultMesh")
+        {
+            FishIntialization();
+        }
+        */
+        Debug.Log("Detected collision between " + gameObject.name + " and " + collide.collider.name);
         Debug.Log("HELLO collide (name) : " + collide.collider.gameObject.name + " Collide: " + collide + " collide(name) : " + collide.collider.gameObject.name);
     }
 
