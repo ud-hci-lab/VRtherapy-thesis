@@ -138,42 +138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b531f336dfee5f438f94ed501caefc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensorHeight: 1
-  sensorAngle: 0
-  autoHeightAngle: 0
-  computeUserMap: 1
-  computeColorMap: 0
-  computeInfraredMap: 0
-  displayUserMap: 1
-  displayColorMap: 0
-  displaySkeletonLines: 1
-  DisplayMapsWidthPercent: 20
-  useMultiSourceReader: 0
-  minUserDistance: 0.5
-  maxUserDistance: 0
-  maxLeftRightDistance: 0
-  maxTrackedUsers: 6
-  showTrackedUsersOnly: 1
-  userDetectionOrder: 0
-  ignoreInferredJoints: 0
-  ignoreZCoordinates: 0
-  lateUpdateAvatars: 0
-  skipRemoteAvatars: 0
-  smoothing: 1
-  useBoneOrientationConstraints: 0
-  estimateJointVelocities: 0
-  velocitySmoothing: 2
-  allowTurnArounds: 0
-  allowedHandRotations: 1
-  waitTimeBeforeRemove: 1
-  avatarControllers: []
-  playerCalibrationPose: 0
-  playerCommonGestures: 
-  minTimeBetweenGestures: 0.7
-  gestureManager: {fileID: 0}
-  gestureListeners: []
-  calibrationText: {fileID: 0}
-  gesturesDebugText: {fileID: 0}
 --- !u!1 &41706945
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,10 +697,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a156e5562553f844fb076a3a2060f757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerIndex: 0
-  isSaving: 1
-  saveFilePath: body_pos
-  secondsToSave: 0
 --- !u!1001 &380466097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -924,6 +884,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b888acd65043ea4d80abdd1be3c05fe, type: 3}
+--- !u!1 &503285075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1084569789}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 503285076}
+  m_Layer: 0
+  m_Name: head (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &503285076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1084569789}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503285075}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 271497694}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &506095037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1126,11 +1116,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4938262979527042, guid: b6b557e5a38efee4f90e60a9287d7b93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.267
+      value: 1.346
       objectReference: {fileID: 0}
     - target: {fileID: 4938262979527042, guid: b6b557e5a38efee4f90e60a9287d7b93, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.53
+      value: -2.536
       objectReference: {fileID: 0}
     - target: {fileID: 4938262979527042, guid: b6b557e5a38efee4f90e60a9287d7b93, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1301,6 +1291,7 @@ MonoBehaviour:
   chickenDots: {fileID: 1327390367}
   chickenMenu: {fileID: 1034904948}
   chickenButton: {fileID: 1974109475}
+  pointer: {fileID: 0}
 --- !u!114 &686920172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3630,6 +3621,7 @@ MonoBehaviour:
   chickenDots: {fileID: 1327390367}
   chickenMenu: {fileID: 1034904948}
   chickenButton: {fileID: 1974109475}
+  pointer: {fileID: 0}
 --- !u!114 &1974109481
 MonoBehaviour:
   m_ObjectHideFlags: 0

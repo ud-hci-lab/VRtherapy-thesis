@@ -11,14 +11,18 @@ public class TaskCounter : MonoBehaviour
 
     private string totalCount;
     private int totalInt;
-    private Animator taskAnimator; 
+    private Animator taskAnimator;
+    private GameObject victory1;
+    private GameObject victory2;
 
     // Start is called before the first frame update
     private void Start()
     {
         tmp = this.GetComponent<TextMeshProUGUI>();
         tmp.text = "0";
-
+        victory1 = GameObject.FindGameObjectWithTag("TaskAnimation");
+        victory1.SetActive(false);
+        victory2 = GameObject.FindGameObjectWithTag("Task").transform.GetChild(1).gameObject;
     }
 
     // Update is called once per frame
@@ -36,8 +40,8 @@ public class TaskCounter : MonoBehaviour
                 }
                 else
                 {
-                    totalCount = "/68";
-                    totalInt = 68;
+                    totalCount = "/69";
+                    totalInt = 69;
                 }
             }
         }
@@ -49,8 +53,10 @@ public class TaskCounter : MonoBehaviour
                 tmp.text = taskControllerScript.tasksAchieved + totalCount;
                 if (taskControllerScript.tasksAchieved == totalInt && taskAnimator == null)
                 {
-                    taskAnimator = GameObject.FindGameObjectWithTag("TaskAnimation").GetComponent<Animator>();
-                    taskAnimator.SetBool("Victory", true);
+                    Debug.Log("VICTORY");
+                    victory1.SetActive(true);
+                    Debug.Log(victory1.name);
+                    victory2.SetActive(false);
                 }
             }
         }
