@@ -97,7 +97,7 @@ public class RecordTrackedAlias : MonoBehaviour
         sample = lslSample(hmd.transform, sample, 0);
         sample = lslSample(controllerL.transform, sample, 6);
         sample = lslSample(controllerR.transform, sample, 12);
-        controllersOutlet.push_sample(sample);
+        //controllersOutlet.push_sample(sample);
         var x = GameMillisToString() +
                 "," +
                 Tracked6DString(hmd.transform) +

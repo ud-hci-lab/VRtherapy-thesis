@@ -712,7 +712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackedAlias: {fileID: 588888183}
-  controllerR: {fileID: 328374416}
+  controllerR: {fileID: 1474515490}
 --- !u!114 &156969896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3047,6 +3047,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc78f42e295d5c04ea5966fc2b206f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1474515490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1656971749961232, guid: 0bb103b515847514e866aa26155cc4b8,
+    type: 3}
+  m_PrefabInstance: {fileID: 892622848}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1512043680
 GameObject:
   m_ObjectHideFlags: 0
@@ -3851,6 +3857,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: TaskAnimation
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355988909365413901, guid: 583d61e36383b8e4a925175b7a38d27d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8261797648154382655, guid: 583d61e36383b8e4a925175b7a38d27d,
         type: 3}

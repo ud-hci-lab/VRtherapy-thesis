@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TaskCounter : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class TaskCounter : MonoBehaviour
     private string totalCount;
     private int totalInt;
     private Animator taskAnimator;
+    public GameObject victoryObj;
+    private ParticleSystem victory;
     private GameObject victory1;
     private GameObject victory2;
 
@@ -20,9 +23,10 @@ public class TaskCounter : MonoBehaviour
     {
         tmp = this.GetComponent<TextMeshProUGUI>();
         tmp.text = "0";
-        victory1 = GameObject.FindGameObjectWithTag("TaskAnimation");
-        victory1.SetActive(false);
-        victory2 = GameObject.FindGameObjectWithTag("Task").transform.GetChild(1).gameObject;
+        victory= victoryObj.GetComponent<ParticleSystem>();
+       // victory1 = GameObject.FindGameObjectWithTag("TaskAnimation");
+      //  victory1.SetActive(false);
+        //victory2 = GameObject.FindGameObjectWithTag("Task").transform.GetChild(1).gameObject;
     }
 
     // Update is called once per frame
@@ -54,9 +58,12 @@ public class TaskCounter : MonoBehaviour
                 if (taskControllerScript.tasksAchieved == totalInt && taskAnimator == null)
                 {
                     Debug.Log("VICTORY");
-                    victory1.SetActive(true);
-                    Debug.Log(victory1.name);
-                    victory2.SetActive(false);
+                    victory.Play(true);
+                    victoryObj.transform.position = new Vector3(0, 0, 0);          
+                   
+                    //victory1.SetActive(true);
+                    //Debug.Log(victory1.activeSelf);
+                    //victory2.SetActive(false);
                 }
             }
         }
