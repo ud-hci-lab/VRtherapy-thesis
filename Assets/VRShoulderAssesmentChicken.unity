@@ -138,6 +138,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 757f9c329eba2f64db4ca044714ebf7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  victoryObj: {fileID: 0}
+  victoryFish: {fileID: 0}
+  victoryChick: {fileID: 0}
 --- !u!114 &7279922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,6 +506,10 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startSpeed.minScalar
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1035758650956878, guid: f84c9d08380504b3cacfb91e6a345927, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f84c9d08380504b3cacfb91e6a345927, type: 3}
@@ -876,6 +883,93 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a156e5562553f844fb076a3a2060f757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &328374418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328374416}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f6c0da1e5684e4c8c03acfadf2f77c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnUIPointerElementEnter:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_UIPointer_UnityEvents+UIPointerEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUIPointerElementExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_UIPointer_UnityEvents+UIPointerEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUIPointerElementClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_UIPointer_UnityEvents+UIPointerEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUIPointerElementDragStart:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_UIPointer_UnityEvents+UIPointerEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUIPointerElementDragEnd:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_UIPointer_UnityEvents+UIPointerEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnActivationButtonPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_ControllerEvents_UnityEvents+ControllerInteractionEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnActivationButtonReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_ControllerEvents_UnityEvents+ControllerInteractionEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnSelectionButtonPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_ControllerEvents_UnityEvents+ControllerInteractionEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnSelectionButtonReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_ControllerEvents_UnityEvents+ControllerInteractionEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &328374419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328374416}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b26f999cbdac8478b6c2a046256169, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activationButton: 10
+  activationMode: 0
+  selectionButton: 3
+  clickMethod: 0
+  attemptClickOnDeactivate: 0
+  clickAfterHoverDuration: 1
+  maximumLength: Infinity
+  attachedTo: {fileID: 0}
+  controllerEvents: {fileID: 0}
+  customOrigin: {fileID: 0}
+  controller: {fileID: 0}
+  pointerOriginTransform: {fileID: 0}
+  hoveringElement: {fileID: 0}
+  controllerRenderModel: {fileID: 0}
+  hoverDurationTimer: 0
+  canClickOnHover: 0
+  autoActivatingCanvas: {fileID: 0}
+  collisionClick: 0
 --- !u!1001 &380466097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1806,12 +1900,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1012132efb942144bba6a70176e876f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fishDots: {fileID: 0}
-  fishMenu: {fileID: 0}
-  fishButton: {fileID: 0}
-  chickenDots: {fileID: 0}
-  chickenMenu: {fileID: 0}
-  chickenButton: {fileID: 0}
+  fishDots: {fileID: 1967009488}
+  fishMenu: {fileID: 686920166}
+  fishButton: {fileID: 736342937}
+  chickenDots: {fileID: 1327390367}
+  chickenMenu: {fileID: 1974109475}
+  chickenButton: {fileID: 1034904948}
 --- !u!4 &771933245
 Transform:
   m_ObjectHideFlags: 0
@@ -2915,6 +3009,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 757f9c329eba2f64db4ca044714ebf7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  victoryObj: {fileID: 527540694}
+  victoryFish: {fileID: 2092432970}
+  victoryChick: {fileID: 0}
 --- !u!114 &1435384919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3475,6 +3572,63 @@ MonoBehaviour:
   maximumCursorScale: {x: Infinity, y: Infinity, z: Infinity}
   customTracer: {fileID: 0}
   customCursor: {fileID: 0}
+--- !u!114 &1610557432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610557430}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f6c0da1e5684e4c8c03acfadf2f77c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnUIPointerElementEnter:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_UIPointer_UnityEvents+UIPointerEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUIPointerElementExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_UIPointer_UnityEvents+UIPointerEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUIPointerElementClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_UIPointer_UnityEvents+UIPointerEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUIPointerElementDragStart:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_UIPointer_UnityEvents+UIPointerEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUIPointerElementDragEnd:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_UIPointer_UnityEvents+UIPointerEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnActivationButtonPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_ControllerEvents_UnityEvents+ControllerInteractionEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnActivationButtonReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_ControllerEvents_UnityEvents+ControllerInteractionEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnSelectionButtonPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_ControllerEvents_UnityEvents+ControllerInteractionEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnSelectionButtonReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_ControllerEvents_UnityEvents+ControllerInteractionEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &1610557433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4180,6 +4334,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ObjectPointer.Straight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333620153645678103, guid: 1950b2150beec924d9cff768bb4e815c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3718142488040735482, guid: 1950b2150beec924d9cff768bb4e815c,
         type: 3}

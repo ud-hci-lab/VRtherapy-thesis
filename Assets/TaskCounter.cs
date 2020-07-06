@@ -15,8 +15,10 @@ public class TaskCounter : MonoBehaviour
     private Animator taskAnimator;
     public GameObject victoryObj;
     private ParticleSystem victory;
-    private GameObject victory1;
-    private GameObject victory2;
+    public GameObject victoryFish;
+    //public GameObject victoryChick;
+    public GameObject fishDots;
+    public GameObject chickDots;
 
     // Start is called before the first frame update
     private void Start()
@@ -24,9 +26,8 @@ public class TaskCounter : MonoBehaviour
         tmp = this.GetComponent<TextMeshProUGUI>();
         tmp.text = "0";
         victory= victoryObj.GetComponent<ParticleSystem>();
-       // victory1 = GameObject.FindGameObjectWithTag("TaskAnimation");
-      //  victory1.SetActive(false);
-        //victory2 = GameObject.FindGameObjectWithTag("Task").transform.GetChild(1).gameObject;
+        victoryFish.SetActive(false);
+        //victoryChick.SetActive(false);
     }
 
     // Update is called once per frame
@@ -59,11 +60,18 @@ public class TaskCounter : MonoBehaviour
                 {
                     Debug.Log("VICTORY");
                     victory.Play(true);
-                    victoryObj.transform.position = new Vector3(0, 0, 0);          
-                   
-                    //victory1.SetActive(true);
-                    //Debug.Log(victory1.activeSelf);
-                    //victory2.SetActive(false);
+                    victoryObj.transform.position = new Vector3(0, 0, 0);
+
+                    if (GameObject.FindGameObjectWithTag("Task").name == "FishTask")
+                    {
+                        victoryFish.SetActive(true);
+                        fishDots.SetActive(false);
+                    } 
+                    else
+                    {
+                        //victoryChick.SetActive(true);
+                        chickDots.SetActive(false);
+                    }
                 }
             }
         }
