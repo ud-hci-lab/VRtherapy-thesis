@@ -140,7 +140,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   victoryObj: {fileID: 0}
   victoryFish: {fileID: 0}
-  victoryChick: {fileID: 0}
+  fishDots: {fileID: 0}
+  chickDots: {fileID: 0}
 --- !u!114 &7279922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3011,7 +3012,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   victoryObj: {fileID: 527540694}
   victoryFish: {fileID: 2092432970}
-  victoryChick: {fileID: 0}
+  fishDots: {fileID: 1724241087}
+  chickDots: {fileID: 2100452666}
 --- !u!114 &1435384919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3683,6 +3685,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1724241087 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7434223995819096695, guid: 583d61e36383b8e4a925175b7a38d27d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1967009487}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1725913010
 GameObject:
   m_ObjectHideFlags: 0
@@ -4213,6 +4221,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1967009487}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2100452666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5728330129321650816, guid: 12ecd722b5c6e99428471c0205a27ae8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2105743448728198869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2111053650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4338,7 +4352,7 @@ PrefabInstance:
     - target: {fileID: 4333620153645678103, guid: 1950b2150beec924d9cff768bb4e815c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3718142488040735482, guid: 1950b2150beec924d9cff768bb4e815c,
         type: 3}
