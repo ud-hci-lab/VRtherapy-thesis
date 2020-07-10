@@ -17,6 +17,10 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
     {
         fishDots.SetActive(false);
         chickenDots.SetActive(false);
+        fishButton.SetActive(true);
+        chickenButton.SetActive(true);
+        fishMenu.SetActive(true);
+        chickenMenu.SetActive(true);
     }
 
     
@@ -33,16 +37,7 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
 
     void OnCollisionEnter(Collision collide)
     {
-        /*if(gameObject.name=="Cube" && collide.collider.gameObject.name=="DefaultMesh")
-        {
-            ChickenIntialization();
-        } else if(gameObject.name=="Cube (1)" && collide.collider.gameObject.name == "DefaultMesh")
-        {
-            FishIntialization();
-        }
-        */
         Debug.Log("Detected collision between " + gameObject.name + " and " + collide.collider.name);
-        Debug.Log("HELLO collide (name) : " + collide.collider.gameObject.name + " Collide: " + collide + " collide(name) : " + collide.collider.gameObject.name);
     }
 
     public void FishIntialization()
@@ -50,9 +45,11 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         fishDots.SetActive(true);
         Vector3 fishPosition = new Vector3(-0.038f, 1.38f, 1.33f);
         fishDots.transform.position = fishPosition;
-        Vector3 buttonPosition = new Vector3(-10f, -10f, -10f);
-        fishButton.transform.position = buttonPosition;
-        chickenButton.transform.position = buttonPosition;
+        fishButton.SetActive(false);
+        chickenButton.SetActive(false);
+        //Vector3 buttonPosition = new Vector3(-10f, -10f, -10f);
+        //fishButton.transform.position = buttonPosition;
+        //chickenButton.transform.position = buttonPosition;
         fishMenu.SetActive(false);
         chickenMenu.SetActive(false);
     }
@@ -62,9 +59,11 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         chickenDots.SetActive(true);
         Vector3 chickenPosition = new Vector3(-0.591f, 1.238f, 1.05f);
         chickenDots.transform.position = chickenPosition;
-        Vector3 buttonPosition = new Vector3(-10f, -10f, -10f);
-        fishButton.transform.position = buttonPosition;
-        chickenButton.transform.position = buttonPosition;
+        fishButton.SetActive(false);
+        chickenButton.SetActive(false);
+        //Vector3 buttonPosition = new Vector3(-10f, -10f, -10f);
+        //fishButton.transform.position = buttonPosition;
+        //chickenButton.transform.position = buttonPosition;
         fishMenu.SetActive(false);
         chickenMenu.SetActive(false);
     }

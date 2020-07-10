@@ -10,14 +10,17 @@ public class TaskCounter : MonoBehaviour
     private TextMeshProUGUI tmp;
     private string totalCount;
     private int totalInt;
-    private Animator taskAnimator;
     public GameObject victoryObj;
     private ParticleSystem victory;
     public GameObject victoryFish;
     //public GameObject victoryChick;
     public GameObject fishDots;
     public GameObject chickDots;
-    int success;
+    private int success;
+    public GameObject afterMenu1;
+    public GameObject afterMenu2;
+    public GameObject cube1;
+    public GameObject cube2;
 
     // Start is called before the first frame update
     private void Start()
@@ -29,9 +32,11 @@ public class TaskCounter : MonoBehaviour
         victory= victoryObj.GetComponent<ParticleSystem>();
         victoryFish.SetActive(false);
         success = 0;
-        timer = 0;
-        timerReached = false;
         //victoryChick.SetActive(false);
+        afterMenu1.SetActive(false);
+        afterMenu2.SetActive(false);
+        cube1.SetActive(true);
+        cube2.SetActive(true);
     }
 
     // Update is called once per frame
@@ -58,9 +63,8 @@ public class TaskCounter : MonoBehaviour
         {
             if (Time.frameCount % 10 == 0)
             {
-                
                 tmp.text = taskControllerScript.tasksAchieved + totalCount;
-                if (taskControllerScript.tasksAchieved == totalInt && taskAnimator == null && success == 0)
+                if (taskControllerScript.tasksAchieved == totalInt && success == 0)
                 {
                     Debug.Log("VICTORY");
                     victory.Play(true);
@@ -87,7 +91,12 @@ public class TaskCounter : MonoBehaviour
     {
         victoryFish.SetActive(false);
         victory.Stop(true);
-        timerReached = true;
         success += 1;
+        afterMenu1.SetActive(true);
+        afterMenu2.SetActive(true);
+        cube1.SetActive(true);
+        cube2.SetActive(true);
+        //cube1.transform.position = new Vector3(0.03f, 2.03f, 0.5f);
+        //cube2.transform.position = new Vector3(0.02f, 1.2f, 0.5f);
     }
 }
