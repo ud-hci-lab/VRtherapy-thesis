@@ -21,18 +21,24 @@ public class returnScript : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    { 
-        fishButton.SetActive(true);
-        chickenButton.SetActive(true);
-        fishMenu.SetActive(true);
-        chickenMenu.SetActive(true);
+    {
         afterMenu1.SetActive(false);
         afterMenu2.SetActive(false);
         afterCube1.SetActive(false);
         afterCube2.SetActive(false);
+        Invoke("wait", 2.0f);
         Debug.Log("RETURN SCRIPT");
         Debug.Log("afters trigger returnscript: " + afterMenu1.activeSelf + " " + afterMenu2.activeSelf + " " + afterCube1.activeSelf + " " + afterCube2.activeSelf);
         Debug.Log("befores trigger returnscript: " + fishMenu.activeSelf + " " + fishButton.activeSelf + " " + chickenButton.activeSelf + " " + chickenMenu.activeSelf);
+    }
+
+    //if press return to main menu, automatically presses the easy cube because it is in the same position when switched. so wait 2 seconds before switching the menus
+    public void wait()
+    {
+        fishButton.SetActive(true);
+        chickenButton.SetActive(true);
+        fishMenu.SetActive(true);
+        chickenMenu.SetActive(true);
     }
 
     // Update is called once per frame
@@ -40,4 +46,5 @@ public class returnScript : MonoBehaviour
     {
         
     }
+
 }

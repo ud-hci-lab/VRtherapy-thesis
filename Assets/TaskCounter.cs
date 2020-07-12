@@ -101,11 +101,14 @@ public class TaskCounter : MonoBehaviour
         Debug.Log("afters stop taskCounter: " + afterMenu1.activeSelf + " " + afterMenu2.activeSelf + " " + cube1.activeSelf + " " + cube2.activeSelf);
         victoryFish.SetActive(false);
         victory.Stop(true);
+        if (success == 0)
+        {
+            afterMenu1.SetActive(true);
+            afterMenu2.SetActive(true);
+            cube1.SetActive(true);
+            cube2.SetActive(true);
+        }
         success += 1;
-        afterMenu1.SetActive(true);
-        afterMenu2.SetActive(true);
-        cube1.SetActive(true);
-        cube2.SetActive(true);
         //cube1.transform.position = new Vector3(0.03f, 2.03f, 0.5f);
         //cube2.transform.position = new Vector3(0.02f, 1.2f, 0.5f);
     }
