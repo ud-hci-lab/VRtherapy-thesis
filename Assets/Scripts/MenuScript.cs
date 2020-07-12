@@ -12,15 +12,25 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
     public GameObject chickenMenu;
     public GameObject chickenButton;
     public GameObject pointer;
+    public GameObject afterMenu1;
+    public GameObject afterMenu2;
+    public GameObject afterCube1;
+    public GameObject afterCube2;
 
     private void Start()
     {
+        Debug.Log("afters menu start: " + afterMenu1.activeSelf + " " + afterMenu2.activeSelf + " " + afterCube1.activeSelf + " " + afterCube2.activeSelf);
+        Debug.Log("befores menu start: " + fishButton.activeSelf + " " + chickenButton.activeSelf + " " + fishMenu.activeSelf + " " + chickenMenu.activeSelf);
         fishDots.SetActive(false);
         chickenDots.SetActive(false);
         fishButton.SetActive(true);
         chickenButton.SetActive(true);
         fishMenu.SetActive(true);
         chickenMenu.SetActive(true);
+        afterMenu1.SetActive(false);
+        afterMenu2.SetActive(false);
+        afterCube1.SetActive(false);
+        afterCube2.SetActive(false);
     }
 
     
@@ -37,11 +47,13 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
 
     void OnCollisionEnter(Collision collide)
     {
-        Debug.Log("Detected collision between " + gameObject.name + " and " + collide.collider.name);
+        Debug.Log("Detected collision between " + gameObject.name + " and " + collide.collider.name + " THIS " + this);
     }
 
     public void FishIntialization()
     {
+        Debug.Log("afters menu fish: " + afterMenu1.activeSelf + " " + afterMenu2.activeSelf + " " + afterCube1.activeSelf + " " + afterCube2.activeSelf);
+        Debug.Log("befores menu fish: " + fishButton.activeSelf + " " + chickenButton.activeSelf + " " + fishMenu.activeSelf + " " + chickenMenu.activeSelf);
         fishDots.SetActive(true);
         Vector3 fishPosition = new Vector3(-0.038f, 1.38f, 1.33f);
         fishDots.transform.position = fishPosition;
@@ -56,6 +68,8 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
 
     public void ChickenIntialization()
     {
+        Debug.Log("afters menu chick: " + afterMenu1.activeSelf + " " + afterMenu2.activeSelf + " " + afterCube1.activeSelf + " " + afterCube2.activeSelf);
+        Debug.Log("befores menu chick: " + fishButton.activeSelf + " " + chickenButton.activeSelf + " " + fishMenu.activeSelf + " " + chickenMenu.activeSelf);
         chickenDots.SetActive(true);
         Vector3 chickenPosition = new Vector3(-0.591f, 1.238f, 1.05f);
         chickenDots.transform.position = chickenPosition;
@@ -68,6 +82,24 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         chickenMenu.SetActive(false);
     }
 
+    /*
+    public void ReturnInitialization()
+    {
+        Debug.Log("afters menu return: " + afterMenu1.activeSelf + " " + afterMenu2.activeSelf + " " + afterCube1.activeSelf + " " + afterCube2.activeSelf);
+        Debug.Log("befores menu return: " + fishButton.activeSelf + " " + chickenButton.activeSelf + " " + fishMenu.activeSelf + " " + chickenMenu.activeSelf);
+        fishButton.SetActive(true);
+        chickenButton.SetActive(true);
+        fishMenu.SetActive(true);
+        chickenMenu.SetActive(true);
+        afterMenu1.SetActive(false);
+        afterMenu2.SetActive(false);
+        afterCube1.SetActive(false);
+        afterCube2.SetActive(false);
+    }
 
-
+    public void QuitInitialization()
+    {
+        Application.Quit();
+    }
+    */
 }

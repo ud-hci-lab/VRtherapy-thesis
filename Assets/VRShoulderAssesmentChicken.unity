@@ -224,7 +224,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Grabbed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1039185331}
+      objectReference: {fileID: 0}
     - target: {fileID: 1731202809393758448, guid: f5635cdbc23069141bbb5ee56cb5fa0e,
         type: 3}
       propertyPath: Grabbed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1704,13 +1704,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686920166}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 2.03, z: 0.5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.02999878, y: 2.0299988, z: 0.5}
   m_LocalScale: {x: 2.7, y: 0.5, z: 0.1}
   m_Children:
   - {fileID: 1044451374}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &686920171
 MonoBehaviour:
@@ -1731,6 +1731,10 @@ MonoBehaviour:
   chickenMenu: {fileID: 1974109475}
   chickenButton: {fileID: 1034904948}
   pointer: {fileID: 1610557430}
+  afterMenu1: {fileID: 1515923624}
+  afterMenu2: {fileID: 243613048}
+  afterCube1: {fileID: 1039185328}
+  afterCube2: {fileID: 1897458436}
 --- !u!114 &686920172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1763,7 +1767,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686920166}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -2136,7 +2140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &771933244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2606,9 +2610,10 @@ GameObject:
   - component: {fileID: 1039185334}
   - component: {fileID: 1039185333}
   - component: {fileID: 1039185332}
-  - component: {fileID: 1039185331}
   - component: {fileID: 1039185330}
   - component: {fileID: 1039185329}
+  - component: {fileID: 1039185331}
+  - component: {fileID: 1039185336}
   m_Layer: 0
   m_Name: ReturnCube
   m_TagString: Menu
@@ -2704,18 +2709,22 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039185328}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cf23c0d5e83c4f4fafb2e7b60ca07ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fishDots: {fileID: 1967009488}
-  fishMenu: {fileID: 1039185328}
+  fishMenu: {fileID: 686920166}
   fishButton: {fileID: 736342937}
   chickenDots: {fileID: 1327390367}
   chickenMenu: {fileID: 1974109475}
   chickenButton: {fileID: 1034904948}
   pointer: {fileID: 1610557430}
+  afterMenu1: {fileID: 1515923624}
+  afterMenu2: {fileID: 243613048}
+  afterCube1: {fileID: 1039185328}
+  afterCube2: {fileID: 1897458436}
 --- !u!65 &1039185332
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2789,6 +2798,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1039185336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039185328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f25cdd5b83ae5140a46050f1221e596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishMenu: {fileID: 686920166}
+  fishButton: {fileID: 736342937}
+  chickenMenu: {fileID: 1974109475}
+  chickenButton: {fileID: 1034904948}
+  afterMenu1: {fileID: 1515923624}
+  afterMenu2: {fileID: 243613048}
+  afterCube1: {fileID: 1039185328}
+  afterCube2: {fileID: 1897458436}
 --- !u!1001 &1044451373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3616,8 +3645,8 @@ MonoBehaviour:
   chickDots: {fileID: 2100452666}
   afterMenu1: {fileID: 1515923624}
   afterMenu2: {fileID: 243613048}
-  cube1: {fileID: 686920166}
-  cube2: {fileID: 1974109475}
+  cube1: {fileID: 1039185328}
+  cube2: {fileID: 1897458436}
 --- !u!114 &1435384919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4692,30 +4721,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_ControllerEvents_UnityEvents+ControllerInteractionEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1610557433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610557430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6948c755e9613734dbac166d770c8e3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1610557434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610557430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1713172129
 GameObject:
   m_ObjectHideFlags: 0
@@ -4967,6 +4972,7 @@ GameObject:
   - component: {fileID: 1897458439}
   - component: {fileID: 1897458438}
   - component: {fileID: 1897458437}
+  - component: {fileID: 1897458443}
   m_Layer: 0
   m_Name: QuitCube
   m_TagString: Menu
@@ -5028,7 +5034,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897458436}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cf23c0d5e83c4f4fafb2e7b60ca07ae, type: 3}
   m_Name: 
@@ -5040,6 +5046,10 @@ MonoBehaviour:
   chickenMenu: {fileID: 1897458436}
   chickenButton: {fileID: 1034904948}
   pointer: {fileID: 1610557430}
+  afterMenu1: {fileID: 1515923624}
+  afterMenu2: {fileID: 243613048}
+  afterCube1: {fileID: 1039185328}
+  afterCube2: {fileID: 1897458436}
 --- !u!65 &1897458439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5113,6 +5123,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1897458443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897458436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cb8392764a0ae144a24c9108a413c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1945142602
 GameObject:
   m_ObjectHideFlags: 0
@@ -5368,7 +5390,7 @@ Transform:
   m_Children:
   - {fileID: 2111053651}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1974109480
 MonoBehaviour:
@@ -5389,6 +5411,10 @@ MonoBehaviour:
   chickenMenu: {fileID: 1974109475}
   chickenButton: {fileID: 1034904948}
   pointer: {fileID: 1610557430}
+  afterMenu1: {fileID: 1515923624}
+  afterMenu2: {fileID: 243613048}
+  afterCube1: {fileID: 1039185328}
+  afterCube2: {fileID: 1897458436}
 --- !u!114 &1974109481
 MonoBehaviour:
   m_ObjectHideFlags: 0

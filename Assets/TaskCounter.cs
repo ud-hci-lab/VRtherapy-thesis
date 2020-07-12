@@ -10,6 +10,7 @@ public class TaskCounter : MonoBehaviour
     private TextMeshProUGUI tmp;
     private string totalCount;
     private int totalInt;
+
     public GameObject victoryObj;
     private ParticleSystem victory;
     public GameObject victoryFish;
@@ -17,16 +18,19 @@ public class TaskCounter : MonoBehaviour
     public GameObject fishDots;
     public GameObject chickDots;
     private int success;
+
     public GameObject afterMenu1;
     public GameObject afterMenu2;
     public GameObject cube1;
     public GameObject cube2;
+    //public GameObject afterCube1;
+    //public GameObject afterCube2;
 
     // Start is called before the first frame update
     private void Start()
     {
-        Debug.Log("this: "+ this);
-        Debug.Log("get component " + this.GetComponent<TextMeshProUGUI>());
+        Debug.Log("afters start taskCounter: " + afterMenu1.activeSelf + " " + afterMenu2.activeSelf + " " + cube1.activeSelf + " " + cube2.activeSelf);
+        Debug.Log("this: "+ this + "get component " + this.GetComponent<TextMeshProUGUI>());
         tmp = this.GetComponent<TextMeshProUGUI>();
         tmp.text = "Dots Completed: 0";
         victory= victoryObj.GetComponent<ParticleSystem>();
@@ -35,8 +39,8 @@ public class TaskCounter : MonoBehaviour
         //victoryChick.SetActive(false);
         afterMenu1.SetActive(false);
         afterMenu2.SetActive(false);
-        cube1.SetActive(true);
-        cube2.SetActive(true);
+        cube1.SetActive(false);
+        cube2.SetActive(false);
     }
 
     // Update is called once per frame
@@ -66,7 +70,7 @@ public class TaskCounter : MonoBehaviour
                 tmp.text = taskControllerScript.tasksAchieved + totalCount;
                 if (taskControllerScript.tasksAchieved == totalInt && success == 0)
                 {
-                    Debug.Log("VICTORY");
+                   // Debug.Log("VICTORY");
                     victory.Play(true);
                     victoryObj.transform.position = new Vector3(0, 0, 0);
 
@@ -81,7 +85,11 @@ public class TaskCounter : MonoBehaviour
                         chickDots.SetActive(false);
                     }
 
-                    Invoke("stop", 5.0f);
+                    Debug.Log("SUCCESS " + success);
+                    if (success == 0)
+                    {
+                        Invoke("stop", 5.0f);
+                    }
                 }
             }
         }
@@ -89,6 +97,8 @@ public class TaskCounter : MonoBehaviour
 
     private void stop()
     {
+        Debug.Log("STOP");
+        Debug.Log("afters stop taskCounter: " + afterMenu1.activeSelf + " " + afterMenu2.activeSelf + " " + cube1.activeSelf + " " + cube2.activeSelf);
         victoryFish.SetActive(false);
         victory.Stop(true);
         success += 1;
