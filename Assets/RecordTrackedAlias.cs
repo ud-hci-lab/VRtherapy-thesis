@@ -93,18 +93,12 @@ public class RecordTrackedAlias : MonoBehaviour
     private void FixedUpdate()
     {
 
-        var sample = new float[18];
+        float[] sample = new float[18];
         sample = lslSample(hmd.transform, sample, 0);
         sample = lslSample(controllerL.transform, sample, 6);
         sample = lslSample(controllerR.transform, sample, 12);
         //controllersOutlet.push_sample(sample);
-        var x = GameMillisToString() +
-                "," +
-                Tracked6DString(hmd.transform) +
-                "," +
-                Tracked6DString(controllerL.transform) +
-                "," +
-                Tracked6DString(controllerR.transform);
+        string x = GameMillisToString() + "," + Tracked6DString(hmd.transform) + "," + Tracked6DString(controllerL.transform) + "," + Tracked6DString(controllerR.transform);
         trackedObservations.Add(x);
 
         if (Input.GetKeyDown(KeyCode.Return) && _framesSinceLastSave >= 90)

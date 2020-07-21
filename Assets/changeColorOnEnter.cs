@@ -43,7 +43,8 @@ public class changeColorOnEnter : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("collide (name) : " + other.gameObject.name);
+        Debug.Log("DRAWING");
+        //Debug.Log("collide (name) : " + other.gameObject.name);
         //ensure that the colder is not another part of the model
         if (other.gameObject.tag == "PTAsset")
         {

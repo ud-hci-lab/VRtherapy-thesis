@@ -460,8 +460,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7aa52a081fabe8468eb902b909f0e81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireworks: {fileID: 527540694}
-  swimmingFish: {fileID: 2092432970}
+  fireworks: {fileID: 0}
+  swimmingFish: {fileID: 0}
 --- !u!1 &90440727
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,7 +819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackedAlias: {fileID: 588888183}
-  controllerR: {fileID: 328374416}
+  controllerR: {fileID: 737880644}
 --- !u!114 &156969896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1617,6 +1617,101 @@ Transform:
   m_Father: {fileID: 271497694}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &670190025
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1327390368}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+        type: 3}
+      propertyPath: m_Name
+      value: rooster_animated_solid
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7e50ce9de1abd6d4e9914409623a2c9b, type: 3}
+--- !u!1 &670190026 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 7e50ce9de1abd6d4e9914409623a2c9b,
+    type: 3}
+  m_PrefabInstance: {fileID: 670190025}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &686920166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,6 +2069,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736342937}
   m_Mesh: {fileID: 21003806}
+--- !u!1 &737880644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1656971749961232, guid: 0bb103b515847514e866aa26155cc4b8,
+    type: 3}
+  m_PrefabInstance: {fileID: 892622848}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &749300135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2153,12 +2254,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1012132efb942144bba6a70176e876f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fishDots: {fileID: 1967009488}
-  fishMenu: {fileID: 686920166}
-  fishButton: {fileID: 736342937}
-  chickenDots: {fileID: 1327390367}
-  chickenMenu: {fileID: 1974109475}
-  chickenButton: {fileID: 1034904948}
+  fishDots: {fileID: 0}
+  fishMenu: {fileID: 0}
+  fishButton: {fileID: 0}
+  chickenDots: {fileID: 0}
+  chickenMenu: {fileID: 0}
+  chickenButton: {fileID: 0}
 --- !u!4 &771933245
 Transform:
   m_ObjectHideFlags: 0
@@ -2612,7 +2713,6 @@ GameObject:
   - component: {fileID: 1039185332}
   - component: {fileID: 1039185330}
   - component: {fileID: 1039185329}
-  - component: {fileID: 1039185331}
   - component: {fileID: 1039185336}
   m_Layer: 0
   m_Name: ReturnCube
@@ -2702,29 +2802,6 @@ MonoBehaviour:
         m_Calls: []
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1039185331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1039185328}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cf23c0d5e83c4f4fafb2e7b60ca07ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fishDots: {fileID: 1967009488}
-  fishMenu: {fileID: 686920166}
-  fishButton: {fileID: 736342937}
-  chickenDots: {fileID: 1327390367}
-  chickenMenu: {fileID: 1974109475}
-  chickenButton: {fileID: 1034904948}
-  pointer: {fileID: 1610557430}
-  afterMenu1: {fileID: 1515923624}
-  afterMenu2: {fileID: 243613048}
-  afterCube1: {fileID: 1039185328}
-  afterCube2: {fileID: 1897458436}
 --- !u!65 &1039185332
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3589,6 +3666,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2105743448728198869}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1327390368 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2105743448609530799, guid: 12ecd722b5c6e99428471c0205a27ae8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2105743448728198869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1435384916
 GameObject:
   m_ObjectHideFlags: 0
@@ -3602,7 +3685,7 @@ GameObject:
   - component: {fileID: 1435384919}
   - component: {fileID: 1435384918}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Progress Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3641,8 +3724,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   victoryObj: {fileID: 527540694}
   victoryFish: {fileID: 2092432970}
+  victoryChick: {fileID: 670190026}
   fishDots: {fileID: 1724241087}
   chickDots: {fileID: 2100452666}
+  unlockVictory: 0
   afterMenu1: {fileID: 1515923624}
   afterMenu2: {fileID: 243613048}
   cube1: {fileID: 1039185328}
@@ -4160,7 +4245,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Grabbed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1897458438}
+      objectReference: {fileID: 0}
     - target: {fileID: 1731202809393758448, guid: f5635cdbc23069141bbb5ee56cb5fa0e,
         type: 3}
       propertyPath: Grabbed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -4970,7 +5055,6 @@ GameObject:
   - component: {fileID: 1897458441}
   - component: {fileID: 1897458440}
   - component: {fileID: 1897458439}
-  - component: {fileID: 1897458438}
   - component: {fileID: 1897458437}
   - component: {fileID: 1897458443}
   m_Layer: 0
@@ -5027,29 +5111,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1897458438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897458436}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cf23c0d5e83c4f4fafb2e7b60ca07ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fishDots: {fileID: 1967009488}
-  fishMenu: {fileID: 686920166}
-  fishButton: {fileID: 736342937}
-  chickenDots: {fileID: 1327390367}
-  chickenMenu: {fileID: 1897458436}
-  chickenButton: {fileID: 1034904948}
-  pointer: {fileID: 1610557430}
-  afterMenu1: {fileID: 1515923624}
-  afterMenu2: {fileID: 243613048}
-  afterCube1: {fileID: 1039185328}
-  afterCube2: {fileID: 1897458436}
 --- !u!65 &1897458439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6228,11 +6289,6 @@ PrefabInstance:
       propertyPath: otherController
       value: 
       objectReference: {fileID: 214301576}
-    - target: {fileID: 5728330129321650816, guid: 12ecd722b5c6e99428471c0205a27ae8,
-        type: 3}
-      propertyPath: m_TagString
-      value: TaskAnimation
-      objectReference: {fileID: 0}
     - target: {fileID: 2105743448609530799, guid: 12ecd722b5c6e99428471c0205a27ae8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6287,6 +6343,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5728330129321650816, guid: 12ecd722b5c6e99428471c0205a27ae8,
+        type: 3}
+      propertyPath: m_TagString
+      value: TaskAnimation
       objectReference: {fileID: 0}
     - target: {fileID: 6360118741444060692, guid: 12ecd722b5c6e99428471c0205a27ae8,
         type: 3}

@@ -1,4 +1,4 @@
-﻿using System;
+﻿  using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,21 +22,21 @@ public class TaskController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-if (Input.GetKeyDown(KeyCode.Return) && _framesSinceLastSave >= 90)
+        if (Input.GetKeyDown(KeyCode.Return) && _framesSinceLastSave >= 90)
         {
-            Debug.Log("hihi enabled");
             SaveTasks();
             taskObservations.Clear();
             tasksAchieved = 0;
             _framesSinceLastSave = 0;
         }
 
-_framesSinceLastSave += 1;
+        _framesSinceLastSave += 1;
 
         if (Input.GetKeyDown(KeyCode.L))
         {
             transform.localScale += new Vector3(0.1F, 0.1f, 0.1f);
-        } else if (Input.GetKeyDown(KeyCode.S))
+        } 
+        else if (Input.GetKeyDown(KeyCode.S))
         {
            transform.localScale -= new Vector3(0.1F, 0.1f, 0.1f);
         }

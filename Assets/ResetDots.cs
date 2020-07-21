@@ -9,7 +9,7 @@ public class ResetDots : MonoBehaviour
     private TaskController taskControllerScript;
     private void Start()
     {
-        colorChangerScriptList = transform.GetChild(1).GetComponentsInChildren<changeColorOnEnter>();
+        colorChangerScriptList = transform.GetChild(0).GetChild(0).GetComponentsInChildren<changeColorOnEnter>(); //get child 0.get child 0
         Debug.Log(colorChangerScriptList.Length + "dots to hit");
 
         if (taskControllerScript == null)
