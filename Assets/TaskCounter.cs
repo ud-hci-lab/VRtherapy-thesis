@@ -24,11 +24,13 @@ public class TaskCounter : MonoBehaviour
     public GameObject afterMenu2;
     public GameObject cube1;
     public GameObject cube2;
+
+    public string currentTask;
     //public GameObject afterCube1;
     //public GameObject afterCube2;
 
     // Start is called before the first frame update
-    private void Start()
+    public void Start()
     {
        // Debug.Log("afters start taskCounter: " + afterMenu1.activeSelf + " " + afterMenu2.activeSelf + " " + cube1.activeSelf + " " + cube2.activeSelf);
        // Debug.Log("this: "+ this + "get component " + this.GetComponent<TextMeshProUGUI>());
@@ -44,14 +46,30 @@ public class TaskCounter : MonoBehaviour
         cube1.SetActive(false);
         cube2.SetActive(false);
         taskControllerScript = null;
-        unlockVictory = false;
+        unlockVictory = true;
     }
 
     // Update is called once per frame
     private void Update()
     {
         if (taskControllerScript == null)
-        {
+        { 
+            if (currentTask == "ChickenTask")
+            {
+
+                taskControllerScript = GameObject.Find("ChickenTask").GetComponent<TaskController>();
+                Debug.Log("TC CHICK");
+                totalCount = "/150";
+                totalInt = 150;
+            } 
+            else
+            {
+                taskControllerScript = GameObject.Find("FishTask").GetComponent<TaskController>();
+                Debug.Log("TC FISH");
+                totalCount = "/69";
+                totalInt = 69;
+            }
+            /*
             if (GameObject.FindGameObjectWithTag("Task"))
             {
                 taskControllerScript = GameObject.FindGameObjectWithTag("Task").GetComponent<TaskController>();
@@ -68,6 +86,7 @@ public class TaskCounter : MonoBehaviour
                     totalInt = 69;
                 }
             }
+            */
         }
         else
         {
@@ -92,7 +111,7 @@ public class TaskCounter : MonoBehaviour
                     victory.Play(true);
                     victoryObj.transform.position = new Vector3(0, 0, 0);
 
-                    if (GameObject.FindGameObjectWithTag("Task").name == "FishTask")
+                    if (currentTask == "FishTask")
                     {
                         victoryFish.SetActive(true);
                         fishDots.SetActive(false);
@@ -125,8 +144,10 @@ public class TaskCounter : MonoBehaviour
             afterMenu2.SetActive(true);
             cube1.SetActive(true);
             cube2.SetActive(true);
+            taskControllerScript.tasksAchieved = 0;
+            taskControllerScript = null;
         }
-       // Debug.Log("FISH stop: " + fishDots.activeSelf + " " + fishDots.transform.position);
+        // Debug.Log("FISH stop: " + fishDots.activeSelf + " " + fishDots.transform.position);
         unlockVictory = false;
         success += 1;
         Debug.Log("SUCCESS " + success);

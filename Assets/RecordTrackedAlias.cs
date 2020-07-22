@@ -172,6 +172,9 @@ public class RecordTrackedAlias : MonoBehaviour
     {
         String[] output = { "RPress" };
         markersOutlet.push_sample(output);
+        float[] sample = new float[18];
+        sample[3] = 361F;
+        controllersOutlet.push_sample(sample);
     }
     public void LMenu()
     {

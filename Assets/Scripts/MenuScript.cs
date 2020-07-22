@@ -16,7 +16,7 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
     public GameObject afterMenu2;
     public GameObject afterCube1;
     public GameObject afterCube2;
-  //  private TaskCounter TaskCounterScript;
+    private TaskCounter TaskCounterScript;
 
     private void Start()
     {
@@ -32,7 +32,7 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         afterMenu2.SetActive(false);
         afterCube1.SetActive(false);
         afterCube2.SetActive(false);
-      //  TaskCounterScript = GameObject.Find("Progress Text (TMP)").GetComponent<TaskCounter>();
+        TaskCounterScript = GameObject.Find("Progress Text (TMP)").GetComponent<TaskCounter>();
     }
 
     
@@ -67,7 +67,8 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         //chickenButton.transform.position = buttonPosition;
         fishMenu.SetActive(false);
         chickenMenu.SetActive(false);
-       // TaskCounterScript.ResetSuccess();
+        TaskCounterScript.Start();
+        TaskCounterScript.currentTask = "FishTask";
     }
 
     public void ChickenIntialization()
@@ -84,7 +85,9 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         //chickenButton.transform.position = buttonPosition;
         fishMenu.SetActive(false);
         chickenMenu.SetActive(false);
-      //  TaskCounterScript.ResetSuccess();
+        TaskCounterScript.Start();
+        TaskCounterScript.currentTask = "ChickenTask";
+        //  TaskCounterScript.ResetSuccess();
     }
 
     /*
