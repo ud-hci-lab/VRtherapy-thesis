@@ -62,7 +62,7 @@ public class TaskCounter : MonoBehaviour
                 totalCount = "/150";
                 totalInt = 150;
             } 
-            else
+            else if (currentTask == "FishTask")
             {
                 taskControllerScript = GameObject.Find("FishTask").GetComponent<TaskController>();
                 Debug.Log("TC FISH");

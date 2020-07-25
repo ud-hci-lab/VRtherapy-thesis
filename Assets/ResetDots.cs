@@ -30,8 +30,8 @@ public class ResetDots : MonoBehaviour
         foreach (var colorScript in colorChangerScriptList)
         {
             colorScript.ResetToRed();
-            Debug.Log("resetting!");
         }
+        Debug.Log("resetting!");
         transform.GetChild(0).gameObject.SetActive(false);
         transform.GetChild(1).gameObject.SetActive(true);
         taskControllerScript.tasksAchieved = 0;

@@ -460,8 +460,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7aa52a081fabe8468eb902b909f0e81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireworks: {fileID: 0}
-  swimmingFish: {fileID: 0}
+  fireworks: {fileID: 527540694}
+  swimmingFish: {fileID: 2092432970}
 --- !u!1 &90440727
 GameObject:
   m_ObjectHideFlags: 0
@@ -3812,6 +3812,7 @@ MonoBehaviour:
   afterMenu2: {fileID: 243613048}
   cube1: {fileID: 1039185328}
   cube2: {fileID: 1897458436}
+  currentTask: 
 --- !u!114 &1435384919
 MonoBehaviour:
   m_ObjectHideFlags: 0

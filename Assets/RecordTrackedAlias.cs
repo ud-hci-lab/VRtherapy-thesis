@@ -28,6 +28,8 @@ public class RecordTrackedAlias : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        Debug.Log("FILE: " + File.Exists("liblsl64.dll"));
+
         var aliasObject = trackedAlias.transform.GetChild(0);
         hmd = aliasObject.transform.GetChild(1).gameObject;
         controllerL = aliasObject.transform.GetChild(2).gameObject;
@@ -35,7 +37,7 @@ public class RecordTrackedAlias : MonoBehaviour
         controllersOutletinfo = new liblsl.StreamInfo("Controllers", "Controller Coords", 18, 50.0, liblsl.channel_format_t.cf_float32, "PRIDMain0");
         controllersOutlet = new liblsl.StreamOutlet(controllersOutletinfo);
         markersOutletInfo = new liblsl.StreamInfo("Controller Markers", "Markers", 1, 0, liblsl.channel_format_t.cf_string, "PRIDMain1");
-        markersOutlet = new liblsl.StreamOutlet(markersOutletInfo);
+        markersOutlet = new liblsl.StreamOutlet(markersOutletInfo);   
     }
 
     // Update is called once per frame
@@ -170,6 +172,7 @@ public class RecordTrackedAlias : MonoBehaviour
     }
     public void RPress()
     {
+        Debug.Log("PRESSSEDDDDDDDDD");  
         String[] output = { "RPress" };
         markersOutlet.push_sample(output);
         float[] sample = new float[18];
