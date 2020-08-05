@@ -7,9 +7,18 @@ public class ResetDots : MonoBehaviour
     // Start is called before the first frame update
     private changeColorOnEnter[] colorChangerScriptList;
     private TaskController taskControllerScript;
-    private void Start()
+    public string task;
+
+    public void Start()
     {
-        colorChangerScriptList = transform.GetChild(0).GetChild(0).GetComponentsInChildren<changeColorOnEnter>(); //get child 0.get child 0
+        if (task == "ChickenTask")
+        {
+            colorChangerScriptList = transform.GetChild(0).GetChild(0).GetComponentsInChildren<changeColorOnEnter>();
+        }
+        else if (task == "FishTask")
+        {
+            colorChangerScriptList = transform.GetChild(1).GetComponentsInChildren<changeColorOnEnter>();
+        }
         Debug.Log(colorChangerScriptList.Length + "dots to hit");
 
         if (taskControllerScript == null)
@@ -32,8 +41,8 @@ public class ResetDots : MonoBehaviour
             colorScript.ResetToRed();
         }
         Debug.Log("resetting!");
-        transform.GetChild(0).gameObject.SetActive(false);
-        transform.GetChild(1).gameObject.SetActive(true);
+       // transform.GetChild(0).gameObject.SetActive(false);
+      //  transform.GetChild(1).gameObject.SetActive(true);
         taskControllerScript.tasksAchieved = 0;
     }
 }

@@ -5,29 +5,33 @@ using UnityEngine.EventSystems;
 
 public class MenuScript : MonoBehaviour, IPointerClickHandler
 {
-    public GameObject fishDots;
+    public GameObject fishTask;
     public GameObject fishMenu;
     public GameObject fishButton;
-    public GameObject chickenDots;
+    public GameObject chickenTask;
     public GameObject chickenMenu;
+    public GameObject squareButton;
+    public GameObject squareTask;
+    public GameObject squareMenu;
     public GameObject chickenButton;
-    public GameObject pointer;
     public GameObject afterMenu1;
     public GameObject afterMenu2;
     public GameObject afterCube1;
     public GameObject afterCube2;
     private TaskCounter TaskCounterScript;
+    private ResetDots ResetDotsScript;
 
     private void Start()
     {
-       // Debug.Log("afters menu start: " + afterMenu1.activeSelf + " " + afterMenu2.activeSelf + " " + afterCube1.activeSelf + " " + afterCube2.activeSelf);
-       // Debug.Log("befores menu start: " + fishButton.activeSelf + " " + chickenButton.activeSelf + " " + fishMenu.activeSelf + " " + chickenMenu.activeSelf);
-        fishDots.SetActive(false);
-        chickenDots.SetActive(false);
+        fishTask.SetActive(false);
+        chickenTask.SetActive(false);
+        squareTask.SetActive(false);
         fishButton.SetActive(true);
         chickenButton.SetActive(true);
+        squareButton.SetActive(true);
         fishMenu.SetActive(true);
         chickenMenu.SetActive(true);
+        squareMenu.SetActive(true);
         afterMenu1.SetActive(false);
         afterMenu2.SetActive(false);
         afterCube1.SetActive(false);
@@ -35,7 +39,6 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         TaskCounterScript = GameObject.Find("Progress Text (TMP)").GetComponent<TaskCounter>();
     }
 
-    
     public void OnPointerClick(PointerEventData pointerEventData)
     {
         //Use this to tell when the user right-clicks on the Button
@@ -43,7 +46,6 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         {
             //Output to console the clicked GameObject's name and the following message. You can replace this with your own actions for when clicking the GameObject.
             Debug.Log(name + " Game Object Right Clicked!");
-           // OnCollisionEnter(pointerEventData);
         }
     }
 
@@ -54,60 +56,56 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
 
     public void FishIntialization()
     {
-       // Debug.Log("afters menu fish: " + afterMenu1.activeSelf + " " + afterMenu2.activeSelf + " " + afterCube1.activeSelf + " " + afterCube2.activeSelf);
-       // Debug.Log("befores menu fish: " + fishButton.activeSelf + " " + chickenButton.activeSelf + " " + fishMenu.activeSelf + " " + chickenMenu.activeSelf);
-        fishDots.SetActive(true);
+        fishTask.SetActive(true);
         Vector3 fishPosition = new Vector3(-0.038f, 1.38f, 1.33f);
-        fishDots.transform.position = fishPosition;
-        Debug.Log("FISH menu: " + fishDots.activeSelf + " " + fishPosition);
+        fishTask.transform.position = fishPosition;
+        Debug.Log("FISH menu: " + fishTask.activeSelf + " " + fishPosition);
         fishButton.SetActive(false);
         chickenButton.SetActive(false);
-        //Vector3 buttonPosition = new Vector3(-10f, -10f, -10f);
-        //fishButton.transform.position = buttonPosition;
-        //chickenButton.transform.position = buttonPosition;
+        squareButton.SetActive(false);
         fishMenu.SetActive(false);
         chickenMenu.SetActive(false);
+        squareMenu.SetActive(false);
         TaskCounterScript.Start();
         TaskCounterScript.currentTask = "FishTask";
+        ResetDotsScript = fishTask.GetComponent<ResetDots>();
+        ResetDotsScript.Start();
+        ResetDotsScript.ResetAllDots();
     }
 
     public void ChickenIntialization()
     {
-      //  Debug.Log("afters menu chick: " + afterMenu1.activeSelf + " " + afterMenu2.activeSelf + " " + afterCube1.activeSelf + " " + afterCube2.activeSelf);
-       // Debug.Log("befores menu chick: " + fishButton.activeSelf + " " + chickenButton.activeSelf + " " + fishMenu.activeSelf + " " + chickenMenu.activeSelf);
-        chickenDots.SetActive(true);
+        chickenTask.SetActive(true);
         Vector3 chickenPosition = new Vector3(-0.591f, 1.238f, 1.05f);
-        chickenDots.transform.position = chickenPosition;
+        chickenTask.transform.position = chickenPosition;
         fishButton.SetActive(false);
         chickenButton.SetActive(false);
-        //Vector3 buttonPosition = new Vector3(-10f, -10f, -10f);
-        //fishButton.transform.position = buttonPosition;
-        //chickenButton.transform.position = buttonPosition;
+        squareButton.SetActive(false);
         fishMenu.SetActive(false);
         chickenMenu.SetActive(false);
+        squareMenu.SetActive(false);
         TaskCounterScript.Start();
         TaskCounterScript.currentTask = "ChickenTask";
-        //  TaskCounterScript.ResetSuccess();
+        ResetDotsScript = chickenTask.GetComponent<ResetDots>();
+        ResetDotsScript.Start();
+        ResetDotsScript.ResetAllDots();
     }
 
-    /*
-    public void ReturnInitialization()
+    public void SquareIntialization()
     {
-        Debug.Log("afters menu return: " + afterMenu1.activeSelf + " " + afterMenu2.activeSelf + " " + afterCube1.activeSelf + " " + afterCube2.activeSelf);
-        Debug.Log("befores menu return: " + fishButton.activeSelf + " " + chickenButton.activeSelf + " " + fishMenu.activeSelf + " " + chickenMenu.activeSelf);
-        fishButton.SetActive(true);
-        chickenButton.SetActive(true);
-        fishMenu.SetActive(true);
-        chickenMenu.SetActive(true);
-        afterMenu1.SetActive(false);
-        afterMenu2.SetActive(false);
-        afterCube1.SetActive(false);
-        afterCube2.SetActive(false);
+        squareTask.SetActive(true);
+        Vector3 squarePosition = new Vector3(-0.591f, 1.238f, 1.05f);
+        squareTask.transform.position = squarePosition;
+        fishButton.SetActive(false);
+        chickenButton.SetActive(false);
+        squareButton.SetActive(false);
+        fishMenu.SetActive(false);
+        chickenMenu.SetActive(false);
+        squareMenu.SetActive(false);
+        TaskCounterScript.Start();
+        TaskCounterScript.currentTask = "SquareTask";
+        ResetDotsScript = squareTask.GetComponent<ResetDots>();
+        ResetDotsScript.Start();
+        ResetDotsScript.ResetAllDots();
     }
-
-    public void QuitInitialization()
-    {
-        Application.Quit();
-    }
-    */
 }

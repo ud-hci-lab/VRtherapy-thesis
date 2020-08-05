@@ -54,7 +54,6 @@ public class TaskController : MonoBehaviour
 
     public void LockTransformToController()
     {
-        Debug.Log("attempting to lock controller");
         transform.SetPositionAndRotation(otherController.transform.position + otherController.transform.forward*0.2f, otherController.transform.rotation);
     }
 } 

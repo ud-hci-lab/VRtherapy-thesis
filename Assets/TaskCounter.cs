@@ -15,8 +15,10 @@ public class TaskCounter : MonoBehaviour
     private ParticleSystem victory;
     public GameObject victoryFish;
     public GameObject victoryChick;
+    public GameObject victorySquare;
     public GameObject fishDots;
     public GameObject chickDots;
+    public GameObject squareDots;
     private int success;
     public bool unlockVictory; 
 
@@ -26,14 +28,10 @@ public class TaskCounter : MonoBehaviour
     public GameObject cube2;
 
     public string currentTask;
-    //public GameObject afterCube1;
-    //public GameObject afterCube2;
 
     // Start is called before the first frame update
     public void Start()
     {
-       // Debug.Log("afters start taskCounter: " + afterMenu1.activeSelf + " " + afterMenu2.activeSelf + " " + cube1.activeSelf + " " + cube2.activeSelf);
-       // Debug.Log("this: "+ this + "get component " + this.GetComponent<TextMeshProUGUI>());
         tmp = this.GetComponent<TextMeshProUGUI>();
         tmp.text = "Dots Completed: 0";
         victory= victoryObj.GetComponent<ParticleSystem>();
@@ -41,6 +39,7 @@ public class TaskCounter : MonoBehaviour
         victoryFish.SetActive(false);
         success = 0;
         victoryChick.SetActive(false);
+        victorySquare.SetActive(false);
         afterMenu1.SetActive(false);
         afterMenu2.SetActive(false);
         cube1.SetActive(false);
@@ -69,24 +68,14 @@ public class TaskCounter : MonoBehaviour
                 totalCount = "/69";
                 totalInt = 69;
             }
-            /*
-            if (GameObject.FindGameObjectWithTag("Task"))
+            else if (currentTask == "SquareTask")
             {
-                taskControllerScript = GameObject.FindGameObjectWithTag("Task").GetComponent<TaskController>();
-                if (GameObject.FindGameObjectWithTag("Task").name == "ChickenTask")
-                {
-                    Debug.Log("TC CHICK");
-                    totalCount = "/150";
-                    totalInt = 150;
-                }
-                else
-                {
-                    Debug.Log("TC FISH");
-                    totalCount = "/69";
-                    totalInt = 69;
-                }
+                taskControllerScript = GameObject.Find("SquareTask").GetComponent<TaskController>();
+                Debug.Log("TC SQUARE");
+                totalCount = "/40";
+                totalInt = 40;
             }
-            */
+
         }
         else
         {
@@ -94,20 +83,11 @@ public class TaskCounter : MonoBehaviour
             {
                 tmp.text = taskControllerScript.tasksAchieved + totalCount;
 
-                Debug.Log("tasks achieved " + taskControllerScript.tasksAchieved);
-                /*
-                Debug.Log("unlock pre -3" + unlockVictory);
-                if (taskControllerScript.tasksAchieved == (totalInt-3))
-                {
-                    Debug.Log("unlock -3" + unlockVictory);
-                    unlockVictory = true;
-                }
-                */
                 unlockVictory = true;
                 
                 if (taskControllerScript.tasksAchieved == totalInt && success == 0 && unlockVictory == true)
                 {
-                    Debug.Log("VICTORY");
+                   // Debug.Log("VICTORY");
                     victory.Play(true);
                     victoryObj.transform.position = new Vector3(0, 0, 0);
 
@@ -116,10 +96,15 @@ public class TaskCounter : MonoBehaviour
                         victoryFish.SetActive(true);
                         fishDots.SetActive(false);
                     }
-                    else
+                    else if (currentTask == "ChickenTask")
                     {
                         victoryChick.SetActive(true);
                         chickDots.SetActive(false);
+                    }
+                    else if (currentTask == "SquareTask")
+                    {
+                        victorySquare.SetActive(true);
+                        squareDots.SetActive(false);
                     }
 
                     if (success == 0)
@@ -133,12 +118,11 @@ public class TaskCounter : MonoBehaviour
 
     private void Stop()
     {
-        Debug.Log("STOP");
-       // Debug.Log("afters stop taskCounter: " + afterMenu1.activeSelf + " " + afterMenu2.activeSelf + " " + cube1.activeSelf + " " + cube2.activeSelf);
         if (success == 0)
         {
             victoryFish.SetActive(false);
             victoryChick.SetActive(false);
+            victorySquare.SetActive(false);
             victory.Stop(true);
             afterMenu1.SetActive(true);
             afterMenu2.SetActive(true);
@@ -147,29 +131,7 @@ public class TaskCounter : MonoBehaviour
             taskControllerScript.tasksAchieved = 0;
             taskControllerScript = null;
         }
-        // Debug.Log("FISH stop: " + fishDots.activeSelf + " " + fishDots.transform.position);
         unlockVictory = false;
         success += 1;
-        Debug.Log("SUCCESS " + success);
     }
-
-    /*
-    public void ResetSuccess()
-    {
-        Debug.Log("RESET success");
-        tmp = this.GetComponent<TextMeshProUGUI>();
-        tmp.text = "Dots Completed: 0";
-        victory = victoryObj.GetComponent<ParticleSystem>();
-        victory.Stop(true);
-        victoryFish.SetActive(false);
-        success = 0;
-        victoryChick.SetActive(false);
-        afterMenu1.SetActive(false);
-        afterMenu2.SetActive(false);
-        cube1.SetActive(false);
-        cube2.SetActive(false);
-        taskControllerScript = null;
-        unlockVictory = false;
-    }
-    */
 }
