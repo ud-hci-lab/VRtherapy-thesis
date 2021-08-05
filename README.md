@@ -1,6 +1,6 @@
 # ShoulderVRAssessment for Oculus Quest
 
-Oculus Quest integration for the iss3 branch of the Project (contact sesegear@udel.edu for questions)
+Oculus Quest integration for the iss3 branch of the project (contact sesegear@udel.edu for questions)
 
 # Changes Made
 Removed SteamVR and added Oculus Integration Asset. This allows program to be run with an Oculus Quest when it is disconnected from the PC, removing the constraint of a physical cable for the user.
