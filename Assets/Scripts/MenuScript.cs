@@ -1,4 +1,4 @@
-﻿  using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -8,16 +8,25 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
     public GameObject fishTask;
     public GameObject fishMenu;
     public GameObject fishButton;
+
+    public GameObject ThreeDfishTask;
+    public GameObject threeDfishMenu;
+    public GameObject threeDfishButton;
+
     public GameObject chickenTask;
     public GameObject chickenMenu;
-    public GameObject squareButton;
+    public GameObject chickenButton;
+
     public GameObject squareTask;
     public GameObject squareMenu;
-    public GameObject chickenButton;
+    public GameObject squareButton;
+    
+    
     public GameObject afterMenu1;
     public GameObject afterMenu2;
     public GameObject afterCube1;
     public GameObject afterCube2;
+
     private TaskCounter TaskCounterScript;
     private ResetDots ResetDotsScript;
 
@@ -26,16 +35,23 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         fishTask.SetActive(false);
         chickenTask.SetActive(false);
         squareTask.SetActive(false);
+        ThreeDfishTask.SetActive(false);
+
         fishButton.SetActive(true);
         chickenButton.SetActive(true);
         squareButton.SetActive(true);
+        threeDfishButton.SetActive(true);
+
         fishMenu.SetActive(true);
         chickenMenu.SetActive(true);
         squareMenu.SetActive(true);
+        threeDfishMenu.SetActive(true);
+
         afterMenu1.SetActive(false);
         afterMenu2.SetActive(false);
         afterCube1.SetActive(false);
         afterCube2.SetActive(false);
+
         TaskCounterScript = GameObject.Find("Progress Text (TMP)").GetComponent<TaskCounter>();
     }
 
@@ -60,12 +76,17 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         Vector3 fishPosition = new Vector3(-0.038f, 1.38f, 1.33f);
         fishTask.transform.position = fishPosition;
         Debug.Log("FISH menu: " + fishTask.activeSelf + " " + fishPosition);
+        
+        threeDfishButton.SetActive(false);
         fishButton.SetActive(false);
         chickenButton.SetActive(false);
         squareButton.SetActive(false);
+        
+        threeDfishMenu.SetActive(false);
         fishMenu.SetActive(false);
         chickenMenu.SetActive(false);
         squareMenu.SetActive(false);
+        
         TaskCounterScript.Start();
         TaskCounterScript.currentTask = "FishTask";
         ResetDotsScript = fishTask.GetComponent<ResetDots>();
@@ -78,14 +99,20 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         chickenTask.SetActive(true);
         Vector3 chickenPosition = new Vector3(-0.591f, 1.238f, 1.05f);
         chickenTask.transform.position = chickenPosition;
+
+        threeDfishButton.SetActive(false);
         fishButton.SetActive(false);
         chickenButton.SetActive(false);
         squareButton.SetActive(false);
+        
+        threeDfishMenu.SetActive(false);
         fishMenu.SetActive(false);
         chickenMenu.SetActive(false);
         squareMenu.SetActive(false);
+        
         TaskCounterScript.Start();
         TaskCounterScript.currentTask = "ChickenTask";
+        
         ResetDotsScript = chickenTask.GetComponent<ResetDots>();
         ResetDotsScript.Start();
         ResetDotsScript.ResetAllDots();
@@ -96,15 +123,45 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         squareTask.SetActive(true);
         Vector3 squarePosition = new Vector3(-0.591f, 1.238f, 1.05f);
         squareTask.transform.position = squarePosition;
+        
+        threeDfishButton.SetActive(false);
         fishButton.SetActive(false);
         chickenButton.SetActive(false);
         squareButton.SetActive(false);
+        
+        threeDfishMenu.SetActive(false);
         fishMenu.SetActive(false);
         chickenMenu.SetActive(false);
         squareMenu.SetActive(false);
+
         TaskCounterScript.Start();
         TaskCounterScript.currentTask = "SquareTask";
         ResetDotsScript = squareTask.GetComponent<ResetDots>();
+        ResetDotsScript.Start();
+        ResetDotsScript.ResetAllDots();
+    }
+
+    public void ThreeDfishIntialization()
+    {
+        ThreeDfishTask.SetActive(true);
+        Vector3 threeDfishPosition = new Vector3(-0.038f, 1.38f, 1.33f);
+        ThreeDfishTask.transform.position = threeDfishPosition;
+        Debug.Log("3D FISH menu: " + ThreeDfishTask.activeSelf + " " + threeDfishPosition);
+        
+        threeDfishButton.SetActive(false);
+        fishButton.SetActive(false);
+        chickenButton.SetActive(false);
+        squareButton.SetActive(false);
+
+        threeDfishMenu.SetActive(false);
+        fishMenu.SetActive(false);
+        chickenMenu.SetActive(false);
+        squareMenu.SetActive(false);
+
+        TaskCounterScript.Start();
+        TaskCounterScript.currentTask = "ThreeDfishTask";
+
+        ResetDotsScript = ThreeDfishTask.GetComponent<ResetDots>();
         ResetDotsScript.Start();
         ResetDotsScript.ResetAllDots();
     }

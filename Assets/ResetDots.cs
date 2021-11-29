@@ -19,6 +19,12 @@ public class ResetDots : MonoBehaviour
         {
             colorChangerScriptList = transform.GetChild(1).GetComponentsInChildren<changeColorOnEnter>();
         }
+        else if (task == "ThreeDfishTask")
+        {
+            colorChangerScriptList = transform.GetChild(0).GetComponentsInChildren<changeColorOnEnter>();
+        }
+
+
         Debug.Log(colorChangerScriptList.Length + "dots to hit");
 
         if (taskControllerScript == null)
