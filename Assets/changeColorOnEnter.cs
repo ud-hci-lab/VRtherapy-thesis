@@ -33,7 +33,6 @@ public class changeColorOnEnter : MonoBehaviour
         
     }
 
-
     public void ResetToRed()
     {
         mMaterial.color = pre;

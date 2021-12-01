@@ -5,11 +5,11 @@ using UnityEngine.EventSystems;
 
 public class MenuScript : MonoBehaviour, IPointerClickHandler
 {
-    public GameObject fishTask;
+    public GameObject FishTask;
     public GameObject fishMenu;
     public GameObject fishButton;
 
-    public GameObject ThreeDfishTask;
+    public GameObject ThreeDFishTask;
     public GameObject threeDfishMenu;
     public GameObject threeDfishButton;
 
@@ -32,10 +32,10 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
 
     private void Start()
     {
-        fishTask.SetActive(false);
+        FishTask.SetActive(false);
         chickenTask.SetActive(false);
         squareTask.SetActive(false);
-        ThreeDfishTask.SetActive(false);
+        ThreeDFishTask.SetActive(false);
 
         fishButton.SetActive(true);
         chickenButton.SetActive(true);
@@ -54,6 +54,8 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
 
         TaskCounterScript = GameObject.Find("Progress Text (TMP)").GetComponent<TaskCounter>();
         
+        // For testing
+        //FishIntialization();
         ThreeDfishIntialization();
 
         Debug.Log("<menu script><START> Started!");
@@ -76,10 +78,10 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
 
     public void FishIntialization()
     {
-        fishTask.SetActive(true);
+        FishTask.SetActive(true);
         Vector3 fishPosition = new Vector3(-0.038f, 1.38f, 1.33f);
-        fishTask.transform.position = fishPosition;
-        Debug.Log("FISH menu: " + fishTask.activeSelf + " " + fishPosition);
+        FishTask.transform.position = fishPosition;
+        Debug.Log("FISH menu: " + FishTask.activeSelf + " " + fishPosition);
         
         threeDfishButton.SetActive(false);
         fishButton.SetActive(false);
@@ -91,9 +93,14 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         chickenMenu.SetActive(false);
         squareMenu.SetActive(false);
         
+        Debug.Log("<menuscript><FishInitialization> Starting TaskCounterScript");
         TaskCounterScript.Start();
         TaskCounterScript.currentTask = "FishTask";
-        ResetDotsScript = fishTask.GetComponent<ResetDots>();
+        Debug.Log("<menuscript><FishInitialization> Successfully started TaskCounterScript: " + TaskCounterScript.currentTask);
+
+        Debug.Log("<menuscript><FishInitialization> Starting ResetDotsScript for " + FishTask);
+        ResetDotsScript = FishTask.GetComponent<ResetDots>();
+        ResetDotsScript.task = TaskCounterScript.currentTask;
         ResetDotsScript.Start();
         ResetDotsScript.ResetAllDots();
     }
@@ -147,10 +154,10 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
 
     public void ThreeDfishIntialization()
     {
-        ThreeDfishTask.SetActive(true);
+        ThreeDFishTask.SetActive(true);
         Vector3 threeDfishPosition = new Vector3(-0.038f, 1.38f, 1.33f);
-        ThreeDfishTask.transform.position = threeDfishPosition;
-        Debug.Log("3D FISH menu: " + ThreeDfishTask.activeSelf + " " + threeDfishPosition);
+        ThreeDFishTask.transform.position = threeDfishPosition;
+        Debug.Log("3D FISH menu: " + ThreeDFishTask.activeSelf + " " + threeDfishPosition);
         
         threeDfishButton.SetActive(false);
         fishButton.SetActive(false);
@@ -162,13 +169,13 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         chickenMenu.SetActive(false);
         squareMenu.SetActive(false);
 
-        Debug.Log("<menuscript> Starting TaskCounterScript");
+        Debug.Log("<menuscript><3DfishInitialization> Starting TaskCounterScript");
         TaskCounterScript.Start();
-        TaskCounterScript.currentTask = "ThreeDfishTask";
-        Debug.Log("Successfully started TaskCounterScript: " + TaskCounterScript.currentTask);
+        TaskCounterScript.currentTask = "ThreeDFishTask";
+        Debug.Log("<menuscript><3DfishInitalization> Successfully started TaskCounterScript: " + TaskCounterScript.currentTask);
 
-        Debug.Log("<menuscript> Starting ResetDotsScript for " + ThreeDfishTask);
-        ResetDotsScript = ThreeDfishTask.GetComponent<ResetDots>();
+        Debug.Log("<menuscript><3DfishInitialization> Starting ResetDotsScript for " + ThreeDFishTask);
+        ResetDotsScript = ThreeDFishTask.GetComponent<ResetDots>();
         ResetDotsScript.task = TaskCounterScript.currentTask;
         ResetDotsScript.Start();
         ResetDotsScript.ResetAllDots();

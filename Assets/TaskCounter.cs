@@ -19,6 +19,8 @@ public class TaskCounter : MonoBehaviour
     public GameObject fishDots;
     public GameObject chickDots;
     public GameObject squareDots;
+    public GameObject threeDfishDots;
+    
     private int success;
     public bool unlockVictory; 
 
@@ -55,7 +57,6 @@ public class TaskCounter : MonoBehaviour
         { 
             if (currentTask == "ChickenTask")
             {
-
                 taskControllerScript = GameObject.Find("ChickenTask").GetComponent<TaskController>();
                 Debug.Log("TC CHICK");
                 totalCount = "/150";
@@ -74,6 +75,13 @@ public class TaskCounter : MonoBehaviour
                 Debug.Log("TC SQUARE");
                 totalCount = "/40";
                 totalInt = 40;
+            } 
+            else if (currentTask == "ThreeDFishTask")
+            {
+                taskControllerScript = GameObject.Find("ThreeDFishTask").GetComponent<TaskController>();
+                Debug.Log("TC 3D Fish");
+                totalCount = "/69";
+                totalInt = 69;
             }
 
         }
@@ -91,7 +99,7 @@ public class TaskCounter : MonoBehaviour
                     victory.Play(true);
                     victoryObj.transform.position = new Vector3(0, 0, 0);
 
-                    if (currentTask == "FishTask")
+                    if (currentTask == "FishTask" || currentTask == "ThreeDFishTask")
                     {
                         victoryFish.SetActive(true);
                         fishDots.SetActive(false);

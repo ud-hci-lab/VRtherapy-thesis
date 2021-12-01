@@ -11,33 +11,41 @@ public class ResetDots : MonoBehaviour
 
     public void Start()
     {
-        Debug.Log("<reset_dots><START> task = " + task);
+        if (task != null) 
+        {
+            Debug.Log("<reset_dots><START> task = " + task);
 
-        if (task == "ChickenTask")
-        {
-            Debug.Log("<reset_dots><START> Chicken Task");
-            colorChangerScriptList = transform.GetChild(0).GetChild(0).GetComponentsInChildren<changeColorOnEnter>();
-        }
-        else if (task == "FishTask")
-        {
-            Debug.Log("<reset_dots><START> FishTask");
-            colorChangerScriptList = transform.GetChild(1).GetChild(0).GetComponentsInChildren<changeColorOnEnter>();
-        }
-        else if (task == "ThreeDfishTask")
-        {
-            Debug.Log("<reset_dots><START> 3D Fish Task");
-            colorChangerScriptList = transform.GetChild(0).GetComponentsInChildren<changeColorOnEnter>();
-        }
-
-        Debug.Log(colorChangerScriptList.Length + " dots to hit");
-
-        if (taskControllerScript == null)
-        {
-            if (GameObject.FindGameObjectWithTag("Task"))
+            if (task == "ChickenTask")
             {
-                taskControllerScript = GameObject.FindGameObjectWithTag("Task").GetComponent<TaskController>();
+                Debug.Log("<reset_dots><START> Chicken Task");
+                colorChangerScriptList = transform.GetChild(0).GetChild(0).GetComponentsInChildren<changeColorOnEnter>();
+            }
+            else if (task == "FishTask")
+            {
+                Debug.Log("<reset_dots><START> FishTask");
+                colorChangerScriptList = transform.GetChild(1).GetComponentsInChildren<changeColorOnEnter>();
+            }
+            else if (task == "ThreeDfishTask")
+            {
+                Debug.Log("<reset_dots><START> 3D Fish Task");
+                colorChangerScriptList = transform.GetChild(0).GetComponentsInChildren<changeColorOnEnter>();
+            }
+
+            Debug.Log(colorChangerScriptList.Length + " dots to hit");
+
+            if (taskControllerScript == null)
+            {
+                if (GameObject.FindGameObjectWithTag("Task"))
+                {
+                    taskControllerScript = GameObject.FindGameObjectWithTag("Task").GetComponent<TaskController>();
+                }
             }
         }
+        else
+        {
+           Debug.Log("<reset_dots><START> task = <null>"); 
+        }
+        
     }
 
 
