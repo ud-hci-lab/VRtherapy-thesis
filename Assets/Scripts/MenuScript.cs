@@ -53,6 +53,10 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         afterCube2.SetActive(false);
 
         TaskCounterScript = GameObject.Find("Progress Text (TMP)").GetComponent<TaskCounter>();
+        
+        ThreeDfishIntialization();
+
+        Debug.Log("<menu script><START> Started!");
     }
 
     public void OnPointerClick(PointerEventData pointerEventData)
@@ -158,10 +162,14 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         chickenMenu.SetActive(false);
         squareMenu.SetActive(false);
 
+        Debug.Log("<menuscript> Starting TaskCounterScript");
         TaskCounterScript.Start();
         TaskCounterScript.currentTask = "ThreeDfishTask";
+        Debug.Log("Successfully started TaskCounterScript: " + TaskCounterScript.currentTask);
 
+        Debug.Log("<menuscript> Starting ResetDotsScript for " + ThreeDfishTask);
         ResetDotsScript = ThreeDfishTask.GetComponent<ResetDots>();
+        ResetDotsScript.task = TaskCounterScript.currentTask;
         ResetDotsScript.Start();
         ResetDotsScript.ResetAllDots();
     }

@@ -11,21 +11,25 @@ public class ResetDots : MonoBehaviour
 
     public void Start()
     {
+        Debug.Log("<reset_dots><START> task = " + task);
+
         if (task == "ChickenTask")
         {
+            Debug.Log("<reset_dots><START> Chicken Task");
             colorChangerScriptList = transform.GetChild(0).GetChild(0).GetComponentsInChildren<changeColorOnEnter>();
         }
         else if (task == "FishTask")
         {
-            colorChangerScriptList = transform.GetChild(1).GetComponentsInChildren<changeColorOnEnter>();
+            Debug.Log("<reset_dots><START> FishTask");
+            colorChangerScriptList = transform.GetChild(1).GetChild(0).GetComponentsInChildren<changeColorOnEnter>();
         }
         else if (task == "ThreeDfishTask")
         {
+            Debug.Log("<reset_dots><START> 3D Fish Task");
             colorChangerScriptList = transform.GetChild(0).GetComponentsInChildren<changeColorOnEnter>();
         }
 
-
-        Debug.Log(colorChangerScriptList.Length + "dots to hit");
+        Debug.Log(colorChangerScriptList.Length + " dots to hit");
 
         if (taskControllerScript == null)
         {
@@ -41,12 +45,12 @@ public class ResetDots : MonoBehaviour
 
     public void ResetAllDots()
     {
-        Debug.Log("Reset values at" + Time.time * 1000f);
+        Debug.Log("Resetting " + colorChangerScriptList.Length + " points for " + task + " at "  + Time.time * 1000f);
         foreach (var colorScript in colorChangerScriptList)
         {
             colorScript.ResetToRed();
         }
-        Debug.Log("resetting!");
+        Debug.Log("Completed resetting all " + colorChangerScriptList.Length + " points for " + task + "!");
        // transform.GetChild(0).gameObject.SetActive(false);
       //  transform.GetChild(1).gameObject.SetActive(true);
         taskControllerScript.tasksAchieved = 0;
