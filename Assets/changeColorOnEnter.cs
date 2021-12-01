@@ -25,12 +25,14 @@ public class changeColorOnEnter : MonoBehaviour
         if (transform.parent.parent.tag == "Task")
         {
             taskControllerScript = transform.parent.parent.GetComponent<TaskController>();
+            
         }
         else
         {
             taskControllerScript = transform.parent.parent.parent.GetComponent<TaskController>();
         }
         
+        Debug.Log("<changeColorOnEnter><START> Set taskControllerScript to " + taskControllerScript);
     }
 
     public void ResetToRed()
@@ -42,7 +44,7 @@ public class changeColorOnEnter : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
     {
-        //ensure that the colder is not another part of the model
+        //ensure that the collider is not another part of the model
         if (other.gameObject.tag == "PTAsset")
         {
             mMaterial.color = post;
@@ -61,6 +63,7 @@ public class changeColorOnEnter : MonoBehaviour
 
     private void AddObservationToList()
     {
+        Debug.Log("<changeColorOnEnter><AddObservationToList> AddingObservationToList defined by " + taskControllerScript);
         var x = RecordTrackedAlias.Tracked6DString(aliasControllerScript.controllerR.transform);
         var timeString = RecordTrackedAlias.GameMillisToString();
         var combinedObservation = timeString + "," + x;

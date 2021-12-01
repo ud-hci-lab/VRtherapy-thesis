@@ -80,8 +80,8 @@ public class TaskCounter : MonoBehaviour
             {
                 taskControllerScript = GameObject.Find("ThreeDFishTask").GetComponent<TaskController>();
                 Debug.Log("TC 3D Fish");
-                totalCount = "/69";
-                totalInt = 69;
+                totalCount = "/30";
+                totalInt = 30;
             }
 
         }
@@ -95,7 +95,7 @@ public class TaskCounter : MonoBehaviour
                 
                 if (taskControllerScript.tasksAchieved == totalInt && success == 0 && unlockVictory == true)
                 {
-                   // Debug.Log("VICTORY");
+                    Debug.Log("VICTORY");
                     victory.Play(true);
                     victoryObj.transform.position = new Vector3(0, 0, 0);
 
