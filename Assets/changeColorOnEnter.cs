@@ -57,8 +57,6 @@ public class changeColorOnEnter : MonoBehaviour
                 taskControllerScript.tasksAchieved += 1;
             }
         }
-       
-        
     }
 
     private void AddObservationToList()

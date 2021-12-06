@@ -6,19 +6,15 @@ using UnityEngine.EventSystems;
 public class MenuScript : MonoBehaviour, IPointerClickHandler
 {
     public GameObject FishTask;
-    public GameObject fishMenu;
     public GameObject fishButton;
 
     public GameObject ThreeDFishTask;
-    public GameObject threeDfishMenu;
     public GameObject threeDfishButton;
 
     public GameObject chickenTask;
-    public GameObject chickenMenu;
     public GameObject chickenButton;
 
     public GameObject squareTask;
-    public GameObject squareMenu;
     public GameObject squareButton;
     
     
@@ -42,11 +38,6 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         squareButton.SetActive(true);
         threeDfishButton.SetActive(true);
 
-        fishMenu.SetActive(true);
-        chickenMenu.SetActive(true);
-        squareMenu.SetActive(true);
-        threeDfishMenu.SetActive(true);
-
         afterMenu1.SetActive(false);
         afterMenu2.SetActive(false);
         afterCube1.SetActive(false);
@@ -56,24 +47,9 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         
         // For testing
         //FishIntialization();
-        ThreeDfishIntialization();
+        //ThreeDfishIntialization();
 
         Debug.Log("<menu script><START> Started!");
-    }
-
-    public void OnPointerClick(PointerEventData pointerEventData)
-    {
-        //Use this to tell when the user right-clicks on the Button
-        if (pointerEventData.button == PointerEventData.InputButton.Right)
-        {
-            //Output to console the clicked GameObject's name and the following message. You can replace this with your own actions for when clicking the GameObject.
-            Debug.Log(name + " Game Object Right Clicked!");
-        }
-    }
-
-    void OnCollisionEnter(Collision collide)
-    {
-        //Debug.Log("Detected collision between " + gameObject.name + " and " + collide.collider.name + " THIS " + this);
     }
 
     public void FishIntialization()
@@ -87,11 +63,6 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         fishButton.SetActive(false);
         chickenButton.SetActive(false);
         squareButton.SetActive(false);
-        
-        threeDfishMenu.SetActive(false);
-        fishMenu.SetActive(false);
-        chickenMenu.SetActive(false);
-        squareMenu.SetActive(false);
         
         Debug.Log("<menuscript><FishInitialization> Starting TaskCounterScript");
         TaskCounterScript.Start();
@@ -116,11 +87,6 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         chickenButton.SetActive(false);
         squareButton.SetActive(false);
         
-        threeDfishMenu.SetActive(false);
-        fishMenu.SetActive(false);
-        chickenMenu.SetActive(false);
-        squareMenu.SetActive(false);
-        
         TaskCounterScript.Start();
         TaskCounterScript.currentTask = "ChickenTask";
         
@@ -139,11 +105,6 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         fishButton.SetActive(false);
         chickenButton.SetActive(false);
         squareButton.SetActive(false);
-        
-        threeDfishMenu.SetActive(false);
-        fishMenu.SetActive(false);
-        chickenMenu.SetActive(false);
-        squareMenu.SetActive(false);
 
         TaskCounterScript.Start();
         TaskCounterScript.currentTask = "SquareTask";
@@ -163,11 +124,6 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         fishButton.SetActive(false);
         chickenButton.SetActive(false);
         squareButton.SetActive(false);
-
-        threeDfishMenu.SetActive(false);
-        fishMenu.SetActive(false);
-        chickenMenu.SetActive(false);
-        squareMenu.SetActive(false);
 
         Debug.Log("<menuscript><3DfishInitialization> Starting TaskCounterScript");
         TaskCounterScript.Start();
