@@ -1194,6 +1194,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a156e5562553f844fb076a3a2060f757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &333957036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8036228232334465152, guid: dbf7b8760cc921f4aadb3f476d97d47c,
+    type: 3}
+  m_PrefabInstance: {fileID: 859767938}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &380466097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2628,6 +2634,8 @@ GameObject:
   - component: {fileID: 1026345110}
   - component: {fileID: 1026345109}
   - component: {fileID: 1026345108}
+  - component: {fileID: 1026345115}
+  - component: {fileID: 1026345114}
   m_Layer: 5
   m_Name: ThreeDfishButton
   m_TagString: Untagged
@@ -2809,6 +2817,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026345106}
   m_CullTransparentMesh: 0
+--- !u!114 &1026345114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026345106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19ccbed1bc1b0b4418aa0aff08447e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1026345115
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026345106}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 155, y: 28, z: 100}
+  m_Center: {x: -0.00016260147, y: -0.000034332275, z: 0.000015258789}
 --- !u!1 &1034904948 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1067028866100618563, guid: 61702937bd4b0a94eaf26fe17efffed8,
@@ -3775,7 +3808,7 @@ MonoBehaviour:
   fishDots: {fileID: 1724241087}
   chickDots: {fileID: 0}
   squareDots: {fileID: 3456633195425017430}
-  threeDfishDots: {fileID: 0}
+  threeDfishDots: {fileID: 333957036}
   unlockVictory: 0
   afterMenu1: {fileID: 1515923624}
   afterMenu2: {fileID: 243613048}
@@ -5469,6 +5502,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Task
+      objectReference: {fileID: 0}
+    - target: {fileID: 1508750673164309285, guid: 583d61e36383b8e4a925175b7a38d27d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8145783870240084694, guid: 583d61e36383b8e4a925175b7a38d27d,
         type: 3}
