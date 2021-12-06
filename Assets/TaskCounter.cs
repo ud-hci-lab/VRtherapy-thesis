@@ -80,8 +80,8 @@ public class TaskCounter : MonoBehaviour
             {
                 taskControllerScript = GameObject.Find("ThreeDFishTask").GetComponent<TaskController>();
                 Debug.Log("TC 3D Fish");
-                totalCount = "/30";
-                totalInt = 30;
+                totalCount = "/91";
+                totalInt = 91;
             }
 
         }
