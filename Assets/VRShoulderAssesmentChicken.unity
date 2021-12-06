@@ -2182,6 +2182,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThreeDFishTask
       objectReference: {fileID: 0}
+    - target: {fileID: 2057932952858661257, guid: dbf7b8760cc921f4aadb3f476d97d47c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2152163651941558553, guid: dbf7b8760cc921f4aadb3f476d97d47c,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5924,8 +5929,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11500000, guid: 5cf23c0d5e83c4f4fafb2e7b60ca07ae,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2748488038835702461, guid: 1950b2150beec924d9cff768bb4e815c,
         type: 3}
       propertyPath: Selected.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -7257,6 +7261,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Task
+      objectReference: {fileID: 0}
+    - target: {fileID: 2105743448609530797, guid: 12ecd722b5c6e99428471c0205a27ae8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2105743448609530799, guid: 12ecd722b5c6e99428471c0205a27ae8,
         type: 3}
