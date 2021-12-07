@@ -10,7 +10,7 @@ public class MenuButton : MonoBehaviour
     private bool hover;
     private Image buttonImage;
     private int hoverTime;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,6 @@ public class MenuButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         if (hover) {
             hoverTime += 1;
 
@@ -32,7 +31,12 @@ public class MenuButton : MonoBehaviour
                 buttonImage.color = Color.green;
 
                 if (hoverTime > 300) {
-                    menu.ThreeDfishIntialization();
+                    if (this.name == "ThreeDfishButton") {
+                        menu.ThreeDfishIntialization();
+                    } else if (this.name == "TwoDfishButton") {
+                        menu.FishIntialization();
+                    }
+                    
                 }
             }
         }
