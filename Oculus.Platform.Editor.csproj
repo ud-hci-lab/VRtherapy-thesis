@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{37433313-F2A5-AAC4-008A-740BEEE79628}</ProjectGuid>
+    <ProjectGuid>{089B8166-D3F2-B108-9311-A4DD92B0A4C9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Oculus.Platform.Editor</AssemblyName>
@@ -282,43 +282,43 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
     </Reference>
     <Reference Include="GitHub.Api.45">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll</HintPath>
     </Reference>
     <Reference Include="GitHub.Logging">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll</HintPath>
     </Reference>
     <Reference Include="GitHub.Unity.45">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll</HintPath>
     </Reference>
     <Reference Include="GitHub.UnityShim">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll</HintPath>
     </Reference>
     <Reference Include="sfw.net">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Assets/Plugins/GitHub/Editor/sfw.net.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Assets/Plugins/GitHub/Editor/sfw.net.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Assets/PolyToolkit/ThirdParty/Json-NET-for-Unity/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Assets/PolyToolkit/ThirdParty/Json-NET-for-Unity/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Malimbe.BehaviourStateRequirementMethod">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Library/PackageCache/io.extendreality.malimbe@9.6.5/Runtime/Malimbe.BehaviourStateRequirementMethod.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Library/PackageCache/io.extendreality.malimbe@9.6.5/Runtime/Malimbe.BehaviourStateRequirementMethod.dll</HintPath>
     </Reference>
     <Reference Include="Malimbe.MemberChangeMethod">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Library/PackageCache/io.extendreality.malimbe@9.6.5/Runtime/Malimbe.MemberChangeMethod.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Library/PackageCache/io.extendreality.malimbe@9.6.5/Runtime/Malimbe.MemberChangeMethod.dll</HintPath>
     </Reference>
     <Reference Include="Malimbe.MemberClearanceMethod">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Library/PackageCache/io.extendreality.malimbe@9.6.5/Runtime/Malimbe.MemberClearanceMethod.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Library/PackageCache/io.extendreality.malimbe@9.6.5/Runtime/Malimbe.MemberClearanceMethod.dll</HintPath>
     </Reference>
     <Reference Include="Malimbe.PropertySerializationAttribute">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Library/PackageCache/io.extendreality.malimbe@9.6.5/Runtime/Malimbe.PropertySerializationAttribute.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Library/PackageCache/io.extendreality.malimbe@9.6.5/Runtime/Malimbe.PropertySerializationAttribute.dll</HintPath>
     </Reference>
     <Reference Include="Malimbe.XmlDocumentationAttribute">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Library/PackageCache/io.extendreality.malimbe@9.6.5/Runtime/Malimbe.XmlDocumentationAttribute.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Library/PackageCache/io.extendreality.malimbe@9.6.5/Runtime/Malimbe.XmlDocumentationAttribute.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.0f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -681,21 +681,21 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>C:/Users/Administrator/Desktop/VRShoulderAssessment-iss3 (1)/VRShoulderAssessment-iss3/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Desktop/Lauren/VRtherapy-thesis/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Oculus.Platform.csproj">
-      <Project>{794A942F-553B-FB98-9719-85BDA58F9252}</Project>
+      <Project>{C50A7862-E4CF-FF22-8EF2-1488E75EC235}</Project>
       <Name>Oculus.Platform</Name>
     </ProjectReference>
   </ItemGroup>

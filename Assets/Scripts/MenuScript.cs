@@ -101,6 +101,7 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         TaskCounterScript.currentTask = "ChickenTask";
         
         ResetDotsScript = chickenTask.GetComponent<ResetDots>();
+        ResetDotsScript.task = TaskCounterScript.currentTask;
         ResetDotsScript.Start();
         ResetDotsScript.ResetAllDots();
     }
@@ -118,7 +119,9 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
 
         TaskCounterScript.Start();
         TaskCounterScript.currentTask = "SquareTask";
+
         ResetDotsScript = squareTask.GetComponent<ResetDots>();
+        ResetDotsScript.task = TaskCounterScript.currentTask;
         ResetDotsScript.Start();
         ResetDotsScript.ResetAllDots();
     }
