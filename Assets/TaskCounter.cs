@@ -53,8 +53,10 @@ public class TaskCounter : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        Debug.Log("TC UPDATE");
         if (taskControllerScript == null)
-        { 
+        {
+            Debug.Log("TC IF");
             if (currentTask == "ChickenTask")
             {
                 taskControllerScript = GameObject.Find("ChickenTask").GetComponent<TaskController>();
@@ -87,6 +89,7 @@ public class TaskCounter : MonoBehaviour
         }
         else
         {
+            Debug.Log("TC ELSE");
             if (Time.frameCount % 10 == 0)
             {
                 tmp.text = taskControllerScript.tasksAchieved + totalCount;
@@ -126,6 +129,7 @@ public class TaskCounter : MonoBehaviour
 
     private void Stop()
     {
+        Debug.Log("TC STOP");
         if (success == 0)
         {
             victoryFish.SetActive(false);

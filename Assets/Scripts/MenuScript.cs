@@ -28,6 +28,7 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
 
     private void Start()
     {
+
         FishTask.SetActive(false);
         chickenTask.SetActive(false);
         squareTask.SetActive(false);
@@ -38,18 +39,16 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         squareButton.SetActive(true);
         threeDfishButton.SetActive(true);
 
+        //ChickenIntialization();
+
         afterMenu1.SetActive(false);
         afterMenu2.SetActive(false);
         afterCube1.SetActive(false);
         afterCube2.SetActive(false);
 
         TaskCounterScript = GameObject.Find("Progress Text (TMP)").GetComponent<TaskCounter>();
-        
-        // For testing
-        //FishIntialization();
-        //ThreeDfishIntialization();
 
-        Debug.Log("<menu script><START> Started!");
+        Debug.Log("Menu Started");
     }
 
     public void OnPointerClick(PointerEventData pointerEventData)
@@ -88,6 +87,7 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
 
     public void ChickenIntialization()
     {
+        Debug.Log("CHICK INIT");
         chickenTask.SetActive(true);
         Vector3 chickenPosition = new Vector3(-0.591f, 1.238f, 1.05f);
         chickenTask.transform.position = chickenPosition;

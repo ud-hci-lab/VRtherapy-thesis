@@ -18,11 +18,12 @@ public class TaskController : MonoBehaviour
 
     private void Start()
     {
-
+        Debug.Log("TASK CONTROLLER");
     }
     
     private void FixedUpdate()
     {
+        Debug.Log("TASK CONTROLLER FIXED");
         if (Input.GetKeyDown(KeyCode.Return) && _framesSinceLastSave >= 90)
         {
             SaveTasks();
@@ -45,6 +46,7 @@ public class TaskController : MonoBehaviour
 
     public void SaveTasks()
     {
+        Debug.Log("TASK CONTROLLER SAVE");
         Debug.Log("attempting to save the tasks");
         Debug.Log("task len:" + taskObservations.Count);
         var startTime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
@@ -55,6 +57,7 @@ public class TaskController : MonoBehaviour
 
     public void LockTransformToController()
     {
+        Debug.Log("TASK CONTROLLER LOCK");
         transform.SetPositionAndRotation(otherController.transform.position + otherController.transform.forward*0.2f, otherController.transform.rotation);
     }
 } 
