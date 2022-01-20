@@ -18,7 +18,7 @@ public class ResetDots : MonoBehaviour
             if (task == "ChickenTask")
             {
                 Debug.Log("<reset_dots><START> Chicken Task");
-                colorChangerScriptList = transform.GetChild(0).GetChild(0).GetComponentsInChildren<changeColorOnEnter>();
+                colorChangerScriptList = transform.GetChild(0).GetChild(2).GetComponentsInChildren<changeColorOnEnter>();
             }
             else if (task == "FishTask")
             {
@@ -59,8 +59,9 @@ public class ResetDots : MonoBehaviour
             colorScript.ResetToRed();
         }
         Debug.Log("Completed resetting all " + colorChangerScriptList.Length + " points for " + task + "!");
-       // transform.GetChild(0).gameObject.SetActive(false);
-      //  transform.GetChild(1).gameObject.SetActive(true);
+        // transform.GetChild(0).gameObject.SetActive(false);
+        //  transform.GetChild(1).gameObject.SetActive(true);
         taskControllerScript.tasksAchieved = 0;
+        Debug.Log("Done ResetAllDots "+taskControllerScript + " " + taskControllerScript.tasksAchieved);
     }
 }

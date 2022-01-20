@@ -24,6 +24,7 @@ public class MenuButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("<MenuButton><Update> ");
         if (hover) {
             hoverTime += 1;
 
@@ -35,8 +36,18 @@ public class MenuButton : MonoBehaviour
                         menu.ThreeDfishIntialization();
                     } else if (this.name == "TwoDfishButton") {
                         menu.FishIntialization();
+                    } else if (this.name == "TwoDchickenButton") {
+                        menu.ChickenIntialization();
+                    } else if (this.name == "TwoDsquareButton") {
+                        menu.SquareIntialization();
+                    } else if (this.name == "ReturnButton") {
+                        Debug.Log("<MenuButton><Update> return button hit");
+                        menu.Start();
+                    } else if (this.name == "QuitButton") {
+                        Debug.Log("Application Quit");
+                        Application.Quit(); //only works when you build the project (doesn't work when you play in edit mode)
                     }
-                    
+
                 }
             }
         }

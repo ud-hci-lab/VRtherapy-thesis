@@ -20,13 +20,13 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
     
     public GameObject afterMenu1;
     public GameObject afterMenu2;
-    public GameObject afterCube1;
-    public GameObject afterCube2;
+    //public GameObject afterCube1;
+   // public GameObject afterCube2;
 
     private TaskCounter TaskCounterScript;
     private ResetDots ResetDotsScript;
 
-    private void Start()
+    public void Start()
     {
 
         FishTask.SetActive(false);
@@ -39,12 +39,10 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         squareButton.SetActive(true);
         threeDfishButton.SetActive(true);
 
-        //ChickenIntialization();
-
         afterMenu1.SetActive(false);
         afterMenu2.SetActive(false);
-        afterCube1.SetActive(false);
-        afterCube2.SetActive(false);
+       // afterCube1.SetActive(false);
+      //  afterCube2.SetActive(false);
 
         TaskCounterScript = GameObject.Find("Progress Text (TMP)").GetComponent<TaskCounter>();
 
@@ -89,21 +87,27 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
     {
         Debug.Log("CHICK INIT");
         chickenTask.SetActive(true);
-        Vector3 chickenPosition = new Vector3(-0.591f, 1.238f, 1.05f);
+        Vector3 chickenPosition = new Vector3(-0.038f, 1.38f, 1.33f);
         chickenTask.transform.position = chickenPosition;
 
         threeDfishButton.SetActive(false);
         fishButton.SetActive(false);
         chickenButton.SetActive(false);
         squareButton.SetActive(false);
-        
+
+        chickenTask.GetComponent<collectCoordinates>().Start();
+
+        Debug.Log("<menuscript><ChickenInit>  chicken at: " + chickenTask.transform.position);
+
         TaskCounterScript.Start();
         TaskCounterScript.currentTask = "ChickenTask";
-        
+        Debug.Log("<menuscript><ChickenInit> Finished task counter, resetting dots");
+
         ResetDotsScript = chickenTask.GetComponent<ResetDots>();
         ResetDotsScript.task = TaskCounterScript.currentTask;
         ResetDotsScript.Start();
         ResetDotsScript.ResetAllDots();
+        Debug.Log("<menuscript><ChickenInit> Finished reset dots, chicken at: " + chickenTask.transform.position);
     }
 
     public void SquareIntialization()

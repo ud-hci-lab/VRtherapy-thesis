@@ -18,7 +18,7 @@ public class TaskController : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("TASK CONTROLLER");
+        Debug.Log("TASK CONTROLLER START");
     }
     
     private void FixedUpdate()

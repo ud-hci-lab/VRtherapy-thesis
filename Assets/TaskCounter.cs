@@ -26,8 +26,8 @@ public class TaskCounter : MonoBehaviour
 
     public GameObject afterMenu1;
     public GameObject afterMenu2;
-    public GameObject cube1;
-    public GameObject cube2;
+    //public GameObject cube1;
+    //public GameObject cube2;
 
     public string currentTask;
 
@@ -44,10 +44,12 @@ public class TaskCounter : MonoBehaviour
         victorySquare.SetActive(false);
         afterMenu1.SetActive(false);
         afterMenu2.SetActive(false);
-        cube1.SetActive(false);
-        cube2.SetActive(false);
+       // cube1.SetActive(false);
+       // cube2.SetActive(false);
         taskControllerScript = null;
         unlockVictory = true;
+
+        Debug.Log("Task Counter Started");
     }
 
     // Update is called once per frame
@@ -138,8 +140,8 @@ public class TaskCounter : MonoBehaviour
             victory.Stop(true);
             afterMenu1.SetActive(true);
             afterMenu2.SetActive(true);
-            cube1.SetActive(true);
-            cube2.SetActive(true);
+           // cube1.SetActive(true);
+           // cube2.SetActive(true);
             taskControllerScript.tasksAchieved = 0;
             taskControllerScript = null;
         }

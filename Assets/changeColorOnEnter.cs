@@ -19,6 +19,7 @@ public class changeColorOnEnter : MonoBehaviour
     {
         mMaterial = GetComponent<Renderer>().material;
         mMaterial.color = pre;
+        Debug.Log("<changeColorOnEnter><START> Material: " + mMaterial + "color: "+mMaterial.color);
         hasBeenGreened = false;
         aliasControllerScript = GameObject.Find("EventSystem").GetComponent<RecordTrackedAlias>();
         audd = GetComponent<AudioSource>();
@@ -37,8 +38,11 @@ public class changeColorOnEnter : MonoBehaviour
 
     public void ResetToRed()
     {
+        mMaterial = GetComponent<Renderer>().material;
+        Debug.Log("<changeColorOnEnter><Reset> Material: " + mMaterial);
         mMaterial.color = pre;
         hasBeenGreened = false;
+        Debug.Log("<changeColorOnEnter><Reset> Done resetting to red : " + mMaterial.color);
     }
 
     // Update is called once per frame

@@ -170,7 +170,7 @@ public class RecordTrackedAlias : MonoBehaviour
     }
     public void RPress()
     {
-        Debug.Log("PRESSSEDDDDDDDDD");  
+        Debug.Log("R Pressed");  
         String[] output = { "RPress" };
         markersOutlet.push_sample(output);
         float[] sample = new float[18];
