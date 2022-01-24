@@ -35,9 +35,13 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         ThreeDFishTask.SetActive(false);
 
         fishButton.SetActive(true);
+        fishButton.GetComponent<MenuButton>().Start();
         chickenButton.SetActive(true);
+        chickenButton.GetComponent<MenuButton>().Start();
         squareButton.SetActive(true);
+        squareButton.GetComponent<MenuButton>().Start();
         threeDfishButton.SetActive(true);
+        threeDfishButton.GetComponent<MenuButton>().Start();
 
         afterMenu1.SetActive(false);
         afterMenu2.SetActive(false);
@@ -46,7 +50,7 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
 
         TaskCounterScript = GameObject.Find("Progress Text (TMP)").GetComponent<TaskCounter>();
 
-        Debug.Log("Menu Started");
+        Debug.Log("Menu Script Started");
     }
 
     public void OnPointerClick(PointerEventData pointerEventData)
@@ -64,7 +68,7 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
         FishTask.SetActive(true);
         Vector3 fishPosition = new Vector3(-0.038f, 1.38f, 1.33f);
         FishTask.transform.position = fishPosition;
-        Debug.Log("FISH menu: " + FishTask.activeSelf + " " + fishPosition);
+        Debug.Log("FISH Initialization: " + FishTask.activeSelf + " " + fishPosition);
         
         threeDfishButton.SetActive(false);
         fishButton.SetActive(false);

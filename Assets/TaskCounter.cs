@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class TaskCounter : MonoBehaviour
 {
     private TaskController taskControllerScript;
+    private exportController exportControllerScript;
     private TextMeshProUGUI tmp;
     private string totalCount;
     private int totalInt;
@@ -48,7 +49,8 @@ public class TaskCounter : MonoBehaviour
        // cube2.SetActive(false);
         taskControllerScript = null;
         unlockVictory = true;
-
+        exportControllerScript = GameObject.Find("RightControllerAlias").GetComponent<exportController>();
+        exportControllerScript.Start();
         Debug.Log("Task Counter Started");
     }
 
@@ -134,6 +136,7 @@ public class TaskCounter : MonoBehaviour
         Debug.Log("TC STOP");
         if (success == 0)
         {
+            exportControllerScript.Stop();
             victoryFish.SetActive(false);
             victoryChick.SetActive(false);
             victorySquare.SetActive(false);
@@ -147,5 +150,6 @@ public class TaskCounter : MonoBehaviour
         }
         unlockVictory = false;
         success += 1;
+        enabled = false;
     }
 }

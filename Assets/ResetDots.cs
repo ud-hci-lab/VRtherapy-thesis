@@ -11,10 +11,9 @@ public class ResetDots : MonoBehaviour
 
     public void Start()
     {
+        Debug.Log("<reset_dots><START> task = " + task);
         if (task != null) 
         {
-            Debug.Log("<reset_dots><START> task = " + task);
-
             if (task == "ChickenTask")
             {
                 Debug.Log("<reset_dots><START> Chicken Task");
@@ -41,19 +40,12 @@ public class ResetDots : MonoBehaviour
                 }
             }
         }
-        else
-        {
-           Debug.Log("<reset_dots><START> task = <null>"); 
-        }
-        
     }
-
-
-    // Update is called once per frame
 
     public void ResetAllDots()
     {
-        Debug.Log("Resetting " + colorChangerScriptList.Length + " points for " + task + " at "  + Time.time * 1000f);
+        Debug.Log("Resetting All dots, color change list:  " + colorChangerScriptList);
+        Debug.Log(colorChangerScriptList.Length + " points for " + task + " at " + Time.time * 1000f);
         foreach (var colorScript in colorChangerScriptList)
         {
             colorScript.ResetToRed();
@@ -63,5 +55,6 @@ public class ResetDots : MonoBehaviour
         //  transform.GetChild(1).gameObject.SetActive(true);
         taskControllerScript.tasksAchieved = 0;
         Debug.Log("Done ResetAllDots "+taskControllerScript + " " + taskControllerScript.tasksAchieved);
+        enabled = false;
     }
 }

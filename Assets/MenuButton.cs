@@ -12,19 +12,20 @@ public class MenuButton : MonoBehaviour
     private int hoverTime;
     
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        Debug.Log("<MenuButton><START> " + this.name);
         menu = GameObject.Find("Table").GetComponent<MenuScript>();
         buttonImage = this.GetComponent<Image>();
         hover = false;
         hoverTime = 0;
+        buttonImage.color = Color.white;
+        Debug.Log("<MenuButton><START> " + this.name);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("<MenuButton><Update> ");
+        Debug.Log("<MenuButton><Update> before");
         if (hover) {
             hoverTime += 1;
 
@@ -33,10 +34,13 @@ public class MenuButton : MonoBehaviour
 
                 if (hoverTime > 300) {
                     if (this.name == "ThreeDfishButton") {
+                        Debug.Log("<MenuButton><Update> 3D fish button hit");
                         menu.ThreeDfishIntialization();
                     } else if (this.name == "TwoDfishButton") {
+                        Debug.Log("<MenuButton><Update> 2D fish button hit");
                         menu.FishIntialization();
                     } else if (this.name == "TwoDchickenButton") {
+                        Debug.Log("<MenuButton><Update> 2D chicken button hit");
                         menu.ChickenIntialization();
                     } else if (this.name == "TwoDsquareButton") {
                         menu.SquareIntialization();
@@ -67,7 +71,7 @@ public class MenuButton : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    /*
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("<MenuButton><OnTriggerExit> " + this.name);
@@ -79,5 +83,6 @@ public class MenuButton : MonoBehaviour
             hoverTime = 0;
         }
     }
+    */
 
 }
